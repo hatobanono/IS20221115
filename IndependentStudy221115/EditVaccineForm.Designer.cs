@@ -31,14 +31,17 @@
 			this.components = new System.ComponentModel.Container();
 			this.editButton = new System.Windows.Forms.Button();
 			this.deleteButton = new System.Windows.Forms.Button();
-			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.vcnNameTextBox = new System.Windows.Forms.TextBox();
 			this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+			this.label1 = new System.Windows.Forms.Label();
+			this.countryTextBox = new System.Windows.Forms.TextBox();
+			this.label2 = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// editButton
 			// 
-			this.editButton.Location = new System.Drawing.Point(90, 114);
+			this.editButton.Location = new System.Drawing.Point(43, 142);
 			this.editButton.Name = "editButton";
 			this.editButton.Size = new System.Drawing.Size(75, 23);
 			this.editButton.TabIndex = 0;
@@ -48,7 +51,7 @@
 			// 
 			// deleteButton
 			// 
-			this.deleteButton.Location = new System.Drawing.Point(90, 156);
+			this.deleteButton.Location = new System.Drawing.Point(124, 142);
 			this.deleteButton.Name = "deleteButton";
 			this.deleteButton.Size = new System.Drawing.Size(75, 23);
 			this.deleteButton.TabIndex = 1;
@@ -56,23 +59,51 @@
 			this.deleteButton.UseVisualStyleBackColor = true;
 			this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
 			// 
-			// textBox1
+			// vcnNameTextBox
 			// 
-			this.textBox1.Location = new System.Drawing.Point(77, 59);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(100, 22);
-			this.textBox1.TabIndex = 2;
+			this.vcnNameTextBox.Location = new System.Drawing.Point(99, 50);
+			this.vcnNameTextBox.Name = "vcnNameTextBox";
+			this.vcnNameTextBox.Size = new System.Drawing.Size(100, 22);
+			this.vcnNameTextBox.TabIndex = 2;
 			// 
 			// errorProvider1
 			// 
 			this.errorProvider1.ContainerControl = this;
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Location = new System.Drawing.Point(34, 53);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(59, 12);
+			this.label1.TabIndex = 3;
+			this.label1.Text = "疫苗名稱: ";
+			// 
+			// countryTextBox
+			// 
+			this.countryTextBox.Location = new System.Drawing.Point(99, 78);
+			this.countryTextBox.Name = "countryTextBox";
+			this.countryTextBox.Size = new System.Drawing.Size(100, 22);
+			this.countryTextBox.TabIndex = 2;
+			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.Location = new System.Drawing.Point(34, 81);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(56, 12);
+			this.label2.TabIndex = 3;
+			this.label2.Text = "製造國家:";
 			// 
 			// EditVaccineForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(259, 207);
-			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.label2);
+			this.Controls.Add(this.label1);
+			this.Controls.Add(this.countryTextBox);
+			this.Controls.Add(this.vcnNameTextBox);
 			this.Controls.Add(this.deleteButton);
 			this.Controls.Add(this.editButton);
 			this.Name = "EditVaccineForm";
@@ -88,7 +119,10 @@
 
 		private System.Windows.Forms.Button editButton;
 		private System.Windows.Forms.Button deleteButton;
-		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.TextBox vcnNameTextBox;
 		private System.Windows.Forms.ErrorProvider errorProvider1;
+		private System.Windows.Forms.Label label2;
+		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.TextBox countryTextBox;
 	}
 }

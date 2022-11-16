@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ISpan.Utility">
-      <HintPath>..\..\Exec3_MaintainUsers\ISpan.Utility\bin\Debug\ISpan.Utility.dll</HintPath>
+      <HintPath>..\..\Solution13\ISpan.Utility\bin\Debug\ISpan.Utility.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -53,11 +53,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreateHospitalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateHospitalForm.Designer.cs">
+      <DependentUpon>CreateHospitalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateHotelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateHotelForm.Designer.cs">
+      <DependentUpon>CreateHotelForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CreateVaccineForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CreateVaccineForm.Designer.cs">
       <DependentUpon>CreateVaccineForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditHospitalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditHospitalForm.Designer.cs">
+      <DependentUpon>EditHospitalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditHotelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditHotelForm.Designer.cs">
+      <DependentUpon>EditHotelForm.cs</DependentUpon>
     </Compile>
     <Compile Include="EditVaccineForm.cs">
       <SubType>Form</SubType>
@@ -65,8 +89,25 @@
     <Compile Include="EditVaccineForm.Designer.cs">
       <DependentUpon>EditVaccineForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="HospitalsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HospitalsForm.Designer.cs">
+      <DependentUpon>HospitalsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HotelsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HotelsForm.Designer.cs">
+      <DependentUpon>HotelsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Infra\Extensions\StringExtenstions.cs" />
     <Compile Include="Infra\ValidationHelper.cs" />
+    <Compile Include="Models\Services\HospitalService.cs" />
+    <Compile Include="Models\Services\HotelService.cs" />
     <Compile Include="Models\Services\VaccineService.cs" />
+    <Compile Include="Models\ViewModels\HospitalIndexVM.cs" />
+    <Compile Include="Models\ViewModels\HotelIndexVM.cs" />
     <Compile Include="Models\ViewModels\VaccineIndexVM.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -76,11 +117,29 @@
     <Compile Include="VaccinesForm.Designer.cs">
       <DependentUpon>VaccinesForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CreateHospitalForm.resx">
+      <DependentUpon>CreateHospitalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateHotelForm.resx">
+      <DependentUpon>CreateHotelForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CreateVaccineForm.resx">
       <DependentUpon>CreateVaccineForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EditHospitalForm.resx">
+      <DependentUpon>EditHospitalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditHotelForm.resx">
+      <DependentUpon>EditHotelForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EditVaccineForm.resx">
       <DependentUpon>EditVaccineForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HospitalsForm.resx">
+      <DependentUpon>HospitalsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HotelsForm.resx">
+      <DependentUpon>HotelsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -95,6 +154,10 @@
       <DependentUpon>VaccinesForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\IndependentStudy221115.Models.Services.HospitalService.datasource" />
+    <None Include="Properties\DataSources\IndependentStudy221115.Models.ViewModels.HospitalIndexVM.datasource" />
+    <None Include="Properties\DataSources\IndependentStudy221115.Models.ViewModels.HotelIndexVM.datasource" />
+    <None Include="Properties\DataSources\IndependentStudy221115.Models.ViewModels.VaccineIndexVM.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

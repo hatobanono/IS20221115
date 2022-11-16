@@ -11,6 +11,7 @@ namespace IndependentStudy221115.Models.ViewModels
 	{
 		public int Id { get; set; }
 		public string VaccineName { get; set; }
+		public string Country { get; set; }
 
 	}
 	public class VaccineVM
@@ -19,6 +20,9 @@ namespace IndependentStudy221115.Models.ViewModels
 
 		[Required(ErrorMessage = "名稱必填")]
 		public string VaccineName { get; set; }
+
+		[Required(ErrorMessage = "國家必填")]
+		public string Country { get; set; }
 
 	}
 }

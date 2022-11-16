@@ -30,48 +30,29 @@ namespace IndependentStudy221115
 
 		private void BindData(int id)
 		{
-			string sql = "SELECT * FROM Vaccines WHERE Id = @Id";
-			var parameters = new SqlParameterBuilder()
-				.AddInt("Id", id)
-				.Build();
+			VaccineVM model = new VaccineService().Get(id);
 
-			DataTable data = new SqlDbHelper("default").Select(sql, parameters);
-
-			if (data.Rows.Count == 0)
-			{
-				MessageBox.Show("抱歉 找不到紀錄");
-				this.DialogResult = DialogResult.OK;
-				this.Close();
-				return;
-			}
-
-			VaccineVM model = ToVaccineVM(data.Rows[0]);
-
-			textBox1.Text = model.VaccineName;
-		}
-
-		private VaccineVM ToVaccineVM(DataRow dataRow)
-		{
-			return new VaccineVM
-			{
-				Id = dataRow.Field<int>("Id"),
-				VaccineName = dataRow.Field<string>("VaccineName"),
-			};
+			// 再將 viewModel值繫結到各控制項
+			vcnNameTextBox.Text = model.VaccineName;
+			countryTextBox.Text = model.Country;
 		}
 
 		private void editButton_Click(object sender, EventArgs e)
 		{
-			string name =textBox1.Text;
+			string name =vcnNameTextBox.Text;
+			string country = countryTextBox.Text;
 
 			VaccineVM model = new VaccineVM
 			{
 				Id = id,
 				VaccineName = name,
+				Country = country,
 			};
 
 			Dictionary<string, Control> map = new Dictionary<string, Control>(StringComparer.CurrentCultureIgnoreCase)
 			{
-				{"VaccineName", textBox1},
+				{"VaccineName", vcnNameTextBox},
+				{"Country", countryTextBox},
 			};
 
 			bool isValid = ValidationHelper.Validate(model, map, errorProvider1);
@@ -99,13 +80,9 @@ namespace IndependentStudy221115
 				return;
 			}
 
-			string sql = "DELETE FROM Vaccines WHERE Id = @Id";
+			
 
-			var parameters = new SqlParameterBuilder()
-				.AddInt("Id", this.id)
-				.Build();
-
-			new SqlDbHelper("default").ExecuteNonQuery(sql, parameters);
+			new VaccineService().Delete(this.id);
 
 			this.DialogResult = DialogResult.OK;
 		}

@@ -16,7 +16,7 @@ namespace IndependentStudy221115
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new VaccinesForm());
+			Application.Run(new HotelsForm());
 		}
 	}
 }

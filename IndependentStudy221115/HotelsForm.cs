@@ -8,38 +8,38 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;	
+using System.Windows.Forms;
 
 namespace IndependentStudy221115
 {
-	public partial class VaccinesForm : Form
+	public partial class HotelsForm : Form
 	{
-		private VaccineIndexVM[] vaccines = null;
-		public VaccinesForm()
+		private HotelIndexVM[] hotels = null;
+		public HotelsForm()
 		{
 			InitializeComponent();
-			DisplayVaccines();
+			DisplayHotels();
 		}
 
-		private void DisplayVaccines()
+		private void DisplayHotels()
 		{
-			vaccines = new VaccineService().GetAll().ToArray();
-			BindData(vaccines);
+			hotels = new HotelService().GetAll().ToArray();
+			BindData(hotels);
 		}
 
-		private void BindData(VaccineIndexVM[] vaccines)
+		private void BindData(HotelIndexVM[] hotels)
 		{
-			dataGridView1.DataSource = vaccines;
+			dataGridView1.DataSource = hotels;
 		}
 
 		private void addNewButton_Click(object sender, EventArgs e)
 		{
-			var frm = new CreateVaccineForm();
+			var frm = new CreateHotelForm();
 			DialogResult result = frm.ShowDialog();
 
 			if (result == DialogResult.OK)
 			{
-				DisplayVaccines();
+				DisplayHotels();
 			}
 		}
 
@@ -49,16 +49,16 @@ namespace IndependentStudy221115
 
 			if (rowIndx < 0) return;
 
-			var row = this.vaccines[rowIndx];
-			int id = row.Id;
+			HotelIndexVM row = this.hotels[rowIndx]; // 使用者點到的那一筆記錄
 
-			var frm = new EditVaccineForm(id);
+			int id = row.Id; // 使用者點到的那一筆記錄的id值
 
-			DialogResult result = frm.ShowDialog();
+			// 把 id 傳給編輯表單的建構函數
+			var frm = new EditHotelForm(id);
 
-			if (result == DialogResult.OK)
+			if (frm.ShowDialog() == DialogResult.OK)
 			{
-				DisplayVaccines();
+				DisplayHotels();
 			}
 		}
 	}

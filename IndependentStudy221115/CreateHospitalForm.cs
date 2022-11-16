@@ -13,42 +13,50 @@ using System.Windows.Forms;
 
 namespace IndependentStudy221115
 {
-	public partial class CreateVaccineForm : Form
+	public partial class CreateHospitalForm : Form
 	{
-		public CreateVaccineForm()
+		public CreateHospitalForm()
 		{
 			InitializeComponent();
 		}
 
 		private void addNewButton_Click(object sender, EventArgs e)
 		{
-			string vaccine = vcnNameTextBox.Text;
-			string country = countryTextBox.Text;
+			// 取得表單的各欄位值
+			string hospitalName = hospitalNameTextBox.Text;
+			string address = addressTextBox.Text;
+			string telephone = telephoneTextBox.Text;
 
-			VaccineVM model = new VaccineVM
+			// 將它們繫結到ViewModel
+			HospitalVM model = new HospitalVM
 			{
-				VaccineName = vaccine,
-				Country = country,
+				HospitalName = hospitalName,
+				Address = address,
+				Telephone = telephone,
 			};
 
+			// 針對ViewModel進行欄位驗證
 			Dictionary<string, Control> map = new Dictionary<string, Control>(StringComparer.CurrentCultureIgnoreCase)
 			{
-				{"VaccineName", vcnNameTextBox},
-				{"Country", countryTextBox},
+				{"HospitalName", hospitalNameTextBox},
+				{"Address", addressTextBox},
+				{"Telephone", telephoneTextBox},
 			};
 
 			bool isValid = ValidationHelper.Validate(model, map, errorProvider1);
 			if (!isValid) return;
 
+
+			// 如果通過驗證,就新增記錄
 			try
 			{
-				new VaccineService().Create(model);
+				new HospitalService().Create(model);
 
 				this.DialogResult = DialogResult.OK;
 			}
 			catch (Exception ex)
 			{
-				MessageBox.Show("新增失敗 原因: " + ex.Message);
+				MessageBox.Show("新增失敗, 原因: " + ex.Message);
 			}
 		}
 	}
