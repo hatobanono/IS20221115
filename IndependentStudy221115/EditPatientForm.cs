@@ -11,6 +11,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -192,6 +193,17 @@ namespace IndependentStudy221115
 			new PatientService().Delete(this.id);
 
 			this.DialogResult = DialogResult.OK;
+		}
+
+		private void addDiagnosedbutton_Click(object sender, EventArgs e)
+		{
+			var frm = new CreateDiagnosedForm(id);
+			DialogResult result = frm.ShowDialog();
+
+			if (result == DialogResult.OK)
+			{
+				this.DialogResult = DialogResult.OK;
+			}
 		}
 	}
 }

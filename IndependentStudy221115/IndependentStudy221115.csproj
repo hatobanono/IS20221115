@@ -53,6 +53,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreateDiagnosedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateDiagnosedForm.Designer.cs">
+      <DependentUpon>CreateDiagnosedForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CreateHospitalForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,11 +137,13 @@
     <Compile Include="Infra\ValidationHelper.cs" />
     <Compile Include="Models\DTOs\PatientDTO.cs" />
     <Compile Include="Models\DTOs\UserDTO.cs" />
+    <Compile Include="Models\Services\DiagnosedService.cs" />
     <Compile Include="Models\Services\HospitalService.cs" />
     <Compile Include="Models\Services\HotelService.cs" />
     <Compile Include="Models\Services\PatientService.cs" />
     <Compile Include="Models\Services\UserService.cs" />
     <Compile Include="Models\Services\VaccineService.cs" />
+    <Compile Include="Models\ViewModels\DiagnosedVM.cs" />
     <Compile Include="Models\ViewModels\HospitalIndexVM.cs" />
     <Compile Include="Models\ViewModels\HotelIndexVM.cs" />
     <Compile Include="Models\ViewModels\LoginVM.cs" />
@@ -162,6 +170,9 @@
     <Compile Include="VaccinesForm.Designer.cs">
       <DependentUpon>VaccinesForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CreateDiagnosedForm.resx">
+      <DependentUpon>CreateDiagnosedForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CreateHospitalForm.resx">
       <DependentUpon>CreateHospitalForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -218,6 +229,7 @@
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\IndependentStudy221115.Models.Services.HospitalService.datasource" />
+    <None Include="Properties\DataSources\IndependentStudy221115.Models.Services.HotelService.datasource" />
     <None Include="Properties\DataSources\IndependentStudy221115.Models.ViewModels.HospitalIndexVM.datasource" />
     <None Include="Properties\DataSources\IndependentStudy221115.Models.ViewModels.HotelIndexVM.datasource" />
     <None Include="Properties\DataSources\IndependentStudy221115.Models.ViewModels.PatientIndexVM.datasource" />

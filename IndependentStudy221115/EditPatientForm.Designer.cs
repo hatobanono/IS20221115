@@ -45,6 +45,7 @@
 			this.label1 = new System.Windows.Forms.Label();
 			this.editButton = new System.Windows.Forms.Button();
 			this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+			this.addDiagnosedbutton = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -192,11 +193,22 @@
 			// 
 			this.errorProvider1.ContainerControl = this;
 			// 
+			// addDiagnosedbutton
+			// 
+			this.addDiagnosedbutton.Location = new System.Drawing.Point(106, 228);
+			this.addDiagnosedbutton.Name = "addDiagnosedbutton";
+			this.addDiagnosedbutton.Size = new System.Drawing.Size(75, 23);
+			this.addDiagnosedbutton.TabIndex = 22;
+			this.addDiagnosedbutton.Text = "通報確診";
+			this.addDiagnosedbutton.UseVisualStyleBackColor = true;
+			this.addDiagnosedbutton.Click += new System.EventHandler(this.addDiagnosedbutton_Click);
+			// 
 			// EditPatientForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(286, 263);
+			this.Controls.Add(this.addDiagnosedbutton);
 			this.Controls.Add(this.editButton);
 			this.Controls.Add(this.deleteButton);
 			this.Controls.Add(this.comboBox3);
@@ -239,5 +251,6 @@
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Button editButton;
 		private System.Windows.Forms.ErrorProvider errorProvider1;
+		private System.Windows.Forms.Button addDiagnosedbutton;
 	}
 }

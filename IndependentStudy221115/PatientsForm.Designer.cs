@@ -31,7 +31,11 @@
 			this.components = new System.ComponentModel.Container();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
 			this.addNewButton = new System.Windows.Forms.Button();
-			this.patientIndexVMBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+			this.管理使用者ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.管理疫苗ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.防疫旅館管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.醫院管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.genderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -39,7 +43,9 @@
 			this.firstVcnDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.secondVcnDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.thirdVcnDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.patientIndexVMBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+			this.menuStrip1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.patientIndexVMBindingSource)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -76,9 +82,46 @@
 			this.addNewButton.UseVisualStyleBackColor = true;
 			this.addNewButton.Click += new System.EventHandler(this.addNewButton_Click);
 			// 
-			// patientIndexVMBindingSource
+			// menuStrip1
 			// 
-			this.patientIndexVMBindingSource.DataSource = typeof(IndependentStudy221115.Models.ViewModels.PatientIndexVM);
+			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.管理使用者ToolStripMenuItem,
+            this.管理疫苗ToolStripMenuItem,
+            this.防疫旅館管理ToolStripMenuItem,
+            this.醫院管理ToolStripMenuItem});
+			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+			this.menuStrip1.Name = "menuStrip1";
+			this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+			this.menuStrip1.TabIndex = 2;
+			this.menuStrip1.Text = "menuStrip1";
+			// 
+			// 管理使用者ToolStripMenuItem
+			// 
+			this.管理使用者ToolStripMenuItem.Name = "管理使用者ToolStripMenuItem";
+			this.管理使用者ToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
+			this.管理使用者ToolStripMenuItem.Text = "使用者管理";
+			this.管理使用者ToolStripMenuItem.Click += new System.EventHandler(this.管理使用者ToolStripMenuItem_Click);
+			// 
+			// 管理疫苗ToolStripMenuItem
+			// 
+			this.管理疫苗ToolStripMenuItem.Name = "管理疫苗ToolStripMenuItem";
+			this.管理疫苗ToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+			this.管理疫苗ToolStripMenuItem.Text = "疫苗管理";
+			this.管理疫苗ToolStripMenuItem.Click += new System.EventHandler(this.管理疫苗ToolStripMenuItem_Click);
+			// 
+			// 防疫旅館管理ToolStripMenuItem
+			// 
+			this.防疫旅館管理ToolStripMenuItem.Name = "防疫旅館管理ToolStripMenuItem";
+			this.防疫旅館管理ToolStripMenuItem.Size = new System.Drawing.Size(91, 20);
+			this.防疫旅館管理ToolStripMenuItem.Text = "防疫旅館管理";
+			this.防疫旅館管理ToolStripMenuItem.Click += new System.EventHandler(this.防疫旅館管理ToolStripMenuItem_Click);
+			// 
+			// 醫院管理ToolStripMenuItem
+			// 
+			this.醫院管理ToolStripMenuItem.Name = "醫院管理ToolStripMenuItem";
+			this.醫院管理ToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+			this.醫院管理ToolStripMenuItem.Text = "醫院管理";
+			this.醫院管理ToolStripMenuItem.Click += new System.EventHandler(this.醫院管理ToolStripMenuItem_Click);
 			// 
 			// idDataGridViewTextBoxColumn
 			// 
@@ -129,6 +172,10 @@
 			this.thirdVcnDataGridViewTextBoxColumn.Name = "thirdVcnDataGridViewTextBoxColumn";
 			this.thirdVcnDataGridViewTextBoxColumn.ReadOnly = true;
 			// 
+			// patientIndexVMBindingSource
+			// 
+			this.patientIndexVMBindingSource.DataSource = typeof(IndependentStudy221115.Models.ViewModels.PatientIndexVM);
+			// 
 			// PatientsForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -136,11 +183,16 @@
 			this.ClientSize = new System.Drawing.Size(800, 450);
 			this.Controls.Add(this.addNewButton);
 			this.Controls.Add(this.dataGridView1);
+			this.Controls.Add(this.menuStrip1);
+			this.MainMenuStrip = this.menuStrip1;
 			this.Name = "PatientsForm";
 			this.Text = "PatientsForm";
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+			this.menuStrip1.ResumeLayout(false);
+			this.menuStrip1.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.patientIndexVMBindingSource)).EndInit();
 			this.ResumeLayout(false);
+			this.PerformLayout();
 
 		}
 
@@ -156,5 +208,10 @@
 		private System.Windows.Forms.DataGridViewTextBoxColumn secondVcnDataGridViewTextBoxColumn;
 		private System.Windows.Forms.DataGridViewTextBoxColumn thirdVcnDataGridViewTextBoxColumn;
 		private System.Windows.Forms.BindingSource patientIndexVMBindingSource;
+		private System.Windows.Forms.MenuStrip menuStrip1;
+		private System.Windows.Forms.ToolStripMenuItem 管理使用者ToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem 管理疫苗ToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem 防疫旅館管理ToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem 醫院管理ToolStripMenuItem;
 	}
 }

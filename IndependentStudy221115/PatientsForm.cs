@@ -64,5 +64,29 @@ namespace IndependentStudy221115
 				DisplayPatients();
 			}
 		}
+
+		private void 管理使用者ToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			var frm = new UsersForm();
+			frm.Show();
+		}
+
+		private void 管理疫苗ToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			var frm = new VaccinesForm();
+			frm.Show();
+		}
+
+		private void 防疫旅館管理ToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			var frm = new HotelsForm();
+			frm.Show();
+		}
+
+		private void 醫院管理ToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			var frm = new HospitalsForm();
+			frm.Show();
+		}
 	}
 }

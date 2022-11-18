@@ -22,7 +22,7 @@ namespace IndependentStudy221115.Models.Services
 		public void Create(PatientDTO model)
 		{
 			bool isExists = _dao.AccountExists(model.Name);
-			if (isExists) throw new Exception("帳號已存在");
+			if (isExists) throw new Exception("病人已存在");
 
 			new PatientDAO().Create(model);
 
