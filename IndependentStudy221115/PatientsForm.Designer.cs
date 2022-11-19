@@ -30,12 +30,6 @@
 		{
 			this.components = new System.ComponentModel.Container();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
-			this.addNewButton = new System.Windows.Forms.Button();
-			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-			this.管理使用者ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.管理疫苗ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.防疫旅館管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.醫院管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.genderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,9 +38,16 @@
 			this.secondVcnDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.thirdVcnDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.patientIndexVMBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.addNewButton = new System.Windows.Forms.Button();
+			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+			this.管理使用者ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.管理疫苗ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.防疫旅館管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.醫院管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.登出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-			this.menuStrip1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.patientIndexVMBindingSource)).BeginInit();
+			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// dataGridView1
@@ -71,57 +72,6 @@
 			this.dataGridView1.Size = new System.Drawing.Size(776, 292);
 			this.dataGridView1.TabIndex = 0;
 			this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-			// 
-			// addNewButton
-			// 
-			this.addNewButton.Location = new System.Drawing.Point(713, 400);
-			this.addNewButton.Name = "addNewButton";
-			this.addNewButton.Size = new System.Drawing.Size(75, 23);
-			this.addNewButton.TabIndex = 1;
-			this.addNewButton.Text = "新增病患";
-			this.addNewButton.UseVisualStyleBackColor = true;
-			this.addNewButton.Click += new System.EventHandler(this.addNewButton_Click);
-			// 
-			// menuStrip1
-			// 
-			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.管理使用者ToolStripMenuItem,
-            this.管理疫苗ToolStripMenuItem,
-            this.防疫旅館管理ToolStripMenuItem,
-            this.醫院管理ToolStripMenuItem});
-			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-			this.menuStrip1.Name = "menuStrip1";
-			this.menuStrip1.Size = new System.Drawing.Size(800, 24);
-			this.menuStrip1.TabIndex = 2;
-			this.menuStrip1.Text = "menuStrip1";
-			// 
-			// 管理使用者ToolStripMenuItem
-			// 
-			this.管理使用者ToolStripMenuItem.Name = "管理使用者ToolStripMenuItem";
-			this.管理使用者ToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
-			this.管理使用者ToolStripMenuItem.Text = "使用者管理";
-			this.管理使用者ToolStripMenuItem.Click += new System.EventHandler(this.管理使用者ToolStripMenuItem_Click);
-			// 
-			// 管理疫苗ToolStripMenuItem
-			// 
-			this.管理疫苗ToolStripMenuItem.Name = "管理疫苗ToolStripMenuItem";
-			this.管理疫苗ToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
-			this.管理疫苗ToolStripMenuItem.Text = "疫苗管理";
-			this.管理疫苗ToolStripMenuItem.Click += new System.EventHandler(this.管理疫苗ToolStripMenuItem_Click);
-			// 
-			// 防疫旅館管理ToolStripMenuItem
-			// 
-			this.防疫旅館管理ToolStripMenuItem.Name = "防疫旅館管理ToolStripMenuItem";
-			this.防疫旅館管理ToolStripMenuItem.Size = new System.Drawing.Size(91, 20);
-			this.防疫旅館管理ToolStripMenuItem.Text = "防疫旅館管理";
-			this.防疫旅館管理ToolStripMenuItem.Click += new System.EventHandler(this.防疫旅館管理ToolStripMenuItem_Click);
-			// 
-			// 醫院管理ToolStripMenuItem
-			// 
-			this.醫院管理ToolStripMenuItem.Name = "醫院管理ToolStripMenuItem";
-			this.醫院管理ToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
-			this.醫院管理ToolStripMenuItem.Text = "醫院管理";
-			this.醫院管理ToolStripMenuItem.Click += new System.EventHandler(this.醫院管理ToolStripMenuItem_Click);
 			// 
 			// idDataGridViewTextBoxColumn
 			// 
@@ -176,6 +126,65 @@
 			// 
 			this.patientIndexVMBindingSource.DataSource = typeof(IndependentStudy221115.Models.ViewModels.PatientIndexVM);
 			// 
+			// addNewButton
+			// 
+			this.addNewButton.Location = new System.Drawing.Point(664, 401);
+			this.addNewButton.Name = "addNewButton";
+			this.addNewButton.Size = new System.Drawing.Size(75, 23);
+			this.addNewButton.TabIndex = 1;
+			this.addNewButton.Text = "新增病患";
+			this.addNewButton.UseVisualStyleBackColor = true;
+			this.addNewButton.Click += new System.EventHandler(this.addNewButton_Click);
+			// 
+			// menuStrip1
+			// 
+			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.管理使用者ToolStripMenuItem,
+            this.管理疫苗ToolStripMenuItem,
+            this.防疫旅館管理ToolStripMenuItem,
+            this.醫院管理ToolStripMenuItem,
+            this.登出ToolStripMenuItem});
+			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+			this.menuStrip1.Name = "menuStrip1";
+			this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+			this.menuStrip1.TabIndex = 2;
+			this.menuStrip1.Text = "menuStrip1";
+			// 
+			// 管理使用者ToolStripMenuItem
+			// 
+			this.管理使用者ToolStripMenuItem.Name = "管理使用者ToolStripMenuItem";
+			this.管理使用者ToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
+			this.管理使用者ToolStripMenuItem.Text = "使用者管理";
+			this.管理使用者ToolStripMenuItem.Click += new System.EventHandler(this.管理使用者ToolStripMenuItem_Click);
+			// 
+			// 管理疫苗ToolStripMenuItem
+			// 
+			this.管理疫苗ToolStripMenuItem.Name = "管理疫苗ToolStripMenuItem";
+			this.管理疫苗ToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+			this.管理疫苗ToolStripMenuItem.Text = "疫苗管理";
+			this.管理疫苗ToolStripMenuItem.Click += new System.EventHandler(this.管理疫苗ToolStripMenuItem_Click);
+			// 
+			// 防疫旅館管理ToolStripMenuItem
+			// 
+			this.防疫旅館管理ToolStripMenuItem.Name = "防疫旅館管理ToolStripMenuItem";
+			this.防疫旅館管理ToolStripMenuItem.Size = new System.Drawing.Size(91, 20);
+			this.防疫旅館管理ToolStripMenuItem.Text = "防疫旅館管理";
+			this.防疫旅館管理ToolStripMenuItem.Click += new System.EventHandler(this.防疫旅館管理ToolStripMenuItem_Click);
+			// 
+			// 醫院管理ToolStripMenuItem
+			// 
+			this.醫院管理ToolStripMenuItem.Name = "醫院管理ToolStripMenuItem";
+			this.醫院管理ToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+			this.醫院管理ToolStripMenuItem.Text = "醫院管理";
+			this.醫院管理ToolStripMenuItem.Click += new System.EventHandler(this.醫院管理ToolStripMenuItem_Click);
+			// 
+			// 登出ToolStripMenuItem
+			// 
+			this.登出ToolStripMenuItem.Name = "登出ToolStripMenuItem";
+			this.登出ToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
+			this.登出ToolStripMenuItem.Text = "登出";
+			this.登出ToolStripMenuItem.Click += new System.EventHandler(this.登出ToolStripMenuItem_Click);
+			// 
 			// PatientsForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -187,10 +196,11 @@
 			this.MainMenuStrip = this.menuStrip1;
 			this.Name = "PatientsForm";
 			this.Text = "PatientsForm";
+			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PatientsForm_FormClosing);
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.patientIndexVMBindingSource)).EndInit();
 			this.menuStrip1.ResumeLayout(false);
 			this.menuStrip1.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.patientIndexVMBindingSource)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -213,5 +223,6 @@
 		private System.Windows.Forms.ToolStripMenuItem 管理疫苗ToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem 防疫旅館管理ToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem 醫院管理ToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem 登出ToolStripMenuItem;
 	}
 }

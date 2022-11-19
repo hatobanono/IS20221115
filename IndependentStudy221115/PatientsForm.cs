@@ -88,5 +88,15 @@ namespace IndependentStudy221115
 			var frm = new HospitalsForm();
 			frm.Show();
 		}
+
+		private void 登出ToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			this.Close();
+		}
+
+		private void PatientsForm_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			this.Owner.Show();
+		}
 	}
 }

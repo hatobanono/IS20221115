@@ -30,11 +30,11 @@
 		{
 			this.components = new System.ComponentModel.Container();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
-			this.addNewButton = new System.Windows.Forms.Button();
-			this.userIndexVMBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.accountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.nickNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.userIndexVMBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.addNewButton = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.userIndexVMBindingSource)).BeginInit();
 			this.SuspendLayout();
@@ -58,20 +58,6 @@
 			this.dataGridView1.TabIndex = 0;
 			this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
 			// 
-			// addNewButton
-			// 
-			this.addNewButton.Location = new System.Drawing.Point(322, 352);
-			this.addNewButton.Name = "addNewButton";
-			this.addNewButton.Size = new System.Drawing.Size(75, 23);
-			this.addNewButton.TabIndex = 1;
-			this.addNewButton.Text = "新增使用者";
-			this.addNewButton.UseVisualStyleBackColor = true;
-			this.addNewButton.Click += new System.EventHandler(this.addNewButton_Click);
-			// 
-			// userIndexVMBindingSource
-			// 
-			this.userIndexVMBindingSource.DataSource = typeof(IndependentStudy221115.Models.ViewModels.UserIndexVM);
-			// 
 			// idDataGridViewTextBoxColumn
 			// 
 			this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
@@ -93,6 +79,20 @@
 			this.nickNameDataGridViewTextBoxColumn.HeaderText = "NickName";
 			this.nickNameDataGridViewTextBoxColumn.Name = "nickNameDataGridViewTextBoxColumn";
 			this.nickNameDataGridViewTextBoxColumn.ReadOnly = true;
+			// 
+			// userIndexVMBindingSource
+			// 
+			this.userIndexVMBindingSource.DataSource = typeof(IndependentStudy221115.Models.ViewModels.UserIndexVM);
+			// 
+			// addNewButton
+			// 
+			this.addNewButton.Location = new System.Drawing.Point(288, 354);
+			this.addNewButton.Name = "addNewButton";
+			this.addNewButton.Size = new System.Drawing.Size(75, 23);
+			this.addNewButton.TabIndex = 1;
+			this.addNewButton.Text = "新增使用者";
+			this.addNewButton.UseVisualStyleBackColor = true;
+			this.addNewButton.Click += new System.EventHandler(this.addNewButton_Click);
 			// 
 			// UsersForm
 			// 
