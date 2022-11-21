@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +18,8 @@ namespace IndependentStudy221115.Models.ViewModels
 		public string FirstVcn { get; set; }
 		public string SecondVcn { get; set; }
 		public string ThirdVcn { get; set; }
+		public string StrIsDiagnosed { get; set; }
+		public Bitmap Image { get; set; }
 	}
 	public class PatientVM
 	{

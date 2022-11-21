@@ -104,7 +104,7 @@ VALUES
 
 		public UserDTO Get(string account)
 		{
-			string sql = "SELECT * FROM Users WHERE Account=@Account";
+			string sql = "SELECT * FROM Users WHERE Account = @Account";
 			var parameters = new SqlParameterBuilder()
 				.AddNVarchar("Account", 50, account)
 				.Build();

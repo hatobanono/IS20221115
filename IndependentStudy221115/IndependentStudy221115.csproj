@@ -259,7 +259,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Infra\images\2569174.png" />
+    <Content Include="Infra\images\463574.png" />
     <Content Include="Infra\SQL設定.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -11,24 +11,22 @@ namespace IndependentStudy221115.Infra.DAOs
 {
 	public class PatientDAO
 	{
-		/// <summary>
-		/// 傳回所有使用者記錄
-		/// </summary>
-		/// <returns></returns>
 		public IEnumerable<PatientDTO> GetAll()
 		{
 			string sql = @"SELECT p.Id, p.[Name], p.Gender, p.Age, p.FirstVcn, p.SecondVcn, p.ThirdVcn, 
-v.VaccineName [V1Name], v2.VaccineName [V2Name], v3.VaccineName [V3Name] 
+v.VaccineName [V1Name], v2.VaccineName [V2Name], v3.VaccineName [V3Name], d.Id [IsDiagnosed]
 FROM Patients p
-LEFT JOIN Vaccines v 
+LEFT JOIN Vaccines v
 ON v.Id = p.FirstVcn
 LEFT JOIN Vaccines v2
 ON v2.Id = p.SecondVcn
 LEFT JOIN Vaccines v3
-ON v3.Id = p.ThirdVcn";
+ON v3.Id = p.ThirdVcn
+LEFT JOIN Diagnoseds d
+ON d.PatientId = p.Id";
 
 			var dbHelper = new SqlDbHelper("default");
-			// 存放在field裡, 稍後在 grid CellClick事件會需要再度用到它
+			
 			return dbHelper.Select(sql, null)
 				.AsEnumerable()
 				.Select(row => new PatientDTO
@@ -43,6 +41,7 @@ ON v3.Id = p.ThirdVcn";
 					V1Name = row.Field<string>("V1Name"),
 					V2Name = row.Field<string>("V2Name"),
 					V3Name = row.Field<string>("V3Name"),
+					IsDiagnosed = row.Field<int?>("IsDiagnosed")
 				}); ;
 
 		}

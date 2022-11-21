@@ -39,8 +39,10 @@
 			this.hotelIndexVMBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.label4 = new System.Windows.Forms.Label();
 			this.diagnosedButton = new System.Windows.Forms.Button();
+			this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
 			((System.ComponentModel.ISupportInitialize)(this.hospitalIndexVMBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.hotelIndexVMBindingSource)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -57,7 +59,7 @@
 			this.dateTimePicker1.Location = new System.Drawing.Point(110, 89);
 			this.dateTimePicker1.Name = "dateTimePicker1";
 			this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
-			this.dateTimePicker1.TabIndex = 1;
+			this.dateTimePicker1.TabIndex = 0;
 			// 
 			// label2
 			// 
@@ -76,7 +78,7 @@
 			this.comboBox1.Location = new System.Drawing.Point(110, 117);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(121, 20);
-			this.comboBox1.TabIndex = 3;
+			this.comboBox1.TabIndex = 1;
 			this.comboBox1.ValueMember = "Id";
 			// 
 			// hospitalIndexVMBindingSource
@@ -100,7 +102,7 @@
 			this.comboBox2.Location = new System.Drawing.Point(110, 143);
 			this.comboBox2.Name = "comboBox2";
 			this.comboBox2.Size = new System.Drawing.Size(121, 20);
-			this.comboBox2.TabIndex = 3;
+			this.comboBox2.TabIndex = 2;
 			this.comboBox2.ValueMember = "Id";
 			// 
 			// hotelIndexVMBindingSource
@@ -121,10 +123,14 @@
 			this.diagnosedButton.Location = new System.Drawing.Point(235, 183);
 			this.diagnosedButton.Name = "diagnosedButton";
 			this.diagnosedButton.Size = new System.Drawing.Size(75, 23);
-			this.diagnosedButton.TabIndex = 5;
+			this.diagnosedButton.TabIndex = 3;
 			this.diagnosedButton.Text = "送出";
 			this.diagnosedButton.UseVisualStyleBackColor = true;
 			this.diagnosedButton.Click += new System.EventHandler(this.diagnosedButton_Click);
+			// 
+			// errorProvider1
+			// 
+			this.errorProvider1.ContainerControl = this;
 			// 
 			// CreateDiagnosedForm
 			// 
@@ -144,6 +150,7 @@
 			this.Load += new System.EventHandler(this.CreateDiagnosedForm_Load);
 			((System.ComponentModel.ISupportInitialize)(this.hospitalIndexVMBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.hotelIndexVMBindingSource)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -161,5 +168,6 @@
 		private System.Windows.Forms.Button diagnosedButton;
 		private System.Windows.Forms.BindingSource hospitalIndexVMBindingSource;
 		private System.Windows.Forms.BindingSource hotelIndexVMBindingSource;
+		private System.Windows.Forms.ErrorProvider errorProvider1;
 	}
 }

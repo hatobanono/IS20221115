@@ -47,7 +47,7 @@ namespace IndependentStudy221115
 			accountTextBox.Text = string.Empty;
 			passwordTextBox.Text = string.Empty;
 
-			var frm = new PatientsForm();
+			var frm = new PatientsForm(model.Account);
 			frm.Owner = this;
 
 			frm.Show();

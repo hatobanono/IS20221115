@@ -45,7 +45,7 @@
 			this.saveButton.Location = new System.Drawing.Point(106, 127);
 			this.saveButton.Name = "saveButton";
 			this.saveButton.Size = new System.Drawing.Size(75, 23);
-			this.saveButton.TabIndex = 9;
+			this.saveButton.TabIndex = 4;
 			this.saveButton.Text = "新增";
 			this.saveButton.UseVisualStyleBackColor = true;
 			this.saveButton.Click += new System.EventHandler(this.saveButton_Click_1);
@@ -55,7 +55,7 @@
 			this.nickNameTextBox.Location = new System.Drawing.Point(81, 99);
 			this.nickNameTextBox.Name = "nickNameTextBox";
 			this.nickNameTextBox.Size = new System.Drawing.Size(100, 22);
-			this.nickNameTextBox.TabIndex = 6;
+			this.nickNameTextBox.TabIndex = 3;
 			// 
 			// label3
 			// 
@@ -71,7 +71,7 @@
 			this.passwordTextBox.Location = new System.Drawing.Point(81, 71);
 			this.passwordTextBox.Name = "passwordTextBox";
 			this.passwordTextBox.Size = new System.Drawing.Size(100, 22);
-			this.passwordTextBox.TabIndex = 7;
+			this.passwordTextBox.TabIndex = 2;
 			// 
 			// label2
 			// 
@@ -87,7 +87,7 @@
 			this.accountTextBox.Location = new System.Drawing.Point(81, 43);
 			this.accountTextBox.Name = "accountTextBox";
 			this.accountTextBox.Size = new System.Drawing.Size(100, 22);
-			this.accountTextBox.TabIndex = 8;
+			this.accountTextBox.TabIndex = 1;
 			// 
 			// label1
 			// 

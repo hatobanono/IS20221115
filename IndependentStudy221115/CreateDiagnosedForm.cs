@@ -14,6 +14,7 @@ using System.Xml.Linq;
 using IndependentStudy221115.Infra;
 using IndependentStudy221115.Models.DTOs;
 using IndependentStudy221115.Models.Services;
+using IndependentStudy221115.Infra.DAOs;
 
 namespace IndependentStudy221115
 {
@@ -81,12 +82,13 @@ namespace IndependentStudy221115
 
 		private void CreateDiagnosedForm_Load(object sender, EventArgs e)
 		{
-			//BindData(id);
+			BindData(id);
 		}
 
 		private void BindData(int id)
 		{
-			throw new NotImplementedException();
+			var dto = new PatientDAO().Get(id);
+			label4.Text = dto.Name;
 		}
 
 		private void diagnosedButton_Click(object sender, EventArgs e)
@@ -103,15 +105,15 @@ namespace IndependentStudy221115
 				HotelId = hotel,
 			};
 
-			//Dictionary<string, Control> map = new Dictionary<string, Control>(StringComparer.CurrentCultureIgnoreCase)
-			//{
-			//	{"Name", nameTextBox},
-			//	{"Gender", passwordTextBox},
-			//	{"Age", ageTextBox},
-			//};
+			Dictionary<string, Control> map = new Dictionary<string, Control>(StringComparer.CurrentCultureIgnoreCase)
+			{
+				{"Date", dateTimePicker1},
+				{"HospitalId", comboBox1},
+				{"HotelId", comboBox2},
+			};
 
-			//bool isValid = ValidationHelper.Validate(model, map, errorProvider1);
-			//if (!isValid) return;
+			bool isValid = ValidationHelper.Validate(model, map, errorProvider1);
+			if (!isValid) return;
 
 
 			try

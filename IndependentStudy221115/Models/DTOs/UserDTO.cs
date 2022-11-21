@@ -10,12 +10,8 @@ namespace IndependentStudy221115.Models.DTOs
 	public class UserDTO
 	{
 		public int Id { get; set; }
-
 		public string Account { get; set; }
-
 		public string Password { get; set; }
-
-
 		public string NickName { get; set; }
 	}
 

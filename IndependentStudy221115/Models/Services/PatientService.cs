@@ -28,17 +28,6 @@ namespace IndependentStudy221115.Models.Services
 
 		}
 
-		//private PatientIndexVM ParseToIndexVM(DataRow row)
-		//{
-		//	return new PatientIndexVM
-		//	{
-		//		Id = row.Field<int>("Id"),
-		//		Name = row.Field<string>("Name"),
-		//		Gender = row.Field<string>("Gender"),
-		//		Age = row.Field<int>("Age"),
-		//	};
-		//}
-
 		internal void Update(PatientDTO model)
 		{
 			bool isExists = _dao.AccountExists(model);

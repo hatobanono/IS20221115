@@ -16,10 +16,12 @@ namespace IndependentStudy221115
 	public partial class PatientsForm : Form
 	{
 		private PatientIndexVM[] patients = null;
-		public PatientsForm()
+		public PatientsForm(string account)
 		{
 			InitializeComponent();
 			DisplayPatients();
+			var dto = new UserDAO().Get(account);
+			label1.Text = $"歡迎，{dto.NickName}";
 		}
 
 		private void DisplayPatients()

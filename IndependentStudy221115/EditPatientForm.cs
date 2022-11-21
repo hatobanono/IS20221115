@@ -52,7 +52,6 @@ namespace IndependentStudy221115
 			return dbHelper.Select(sql, null)
 				.AsEnumerable()
 				.Select(row => ToVaccineVM(row))
-				.Prepend(new VaccineVM { Id = 0, VaccineName = String.Empty })
 				.ToList();
 		}
 
@@ -74,6 +73,17 @@ namespace IndependentStudy221115
 		{
 			// UserVM model = new UserService().Get(id);
 			PatientDTO dto = new PatientDAO().Get(id);
+
+			label7.Text = "健康";
+			label8.Text = string.Empty;
+			label9.Text = string.Empty;
+			if (new DiagnosedService().AccountExists(id))
+			{
+				label7.Text = "確診隔離中";
+				var ds = new DiagnosedService().Get(id);
+				label8.Text = $"{ds.Hospital}\r\n{ds.HospitalAddress}\r\n{ds.HospitalTelephone}";
+				label9.Text = $"{ds.Hotel}\r\n{ds.HotelAddress}\r\n{ds.HotelTelephone}";
+			}
 
 			// 把DTO轉型為ViewModel
 			PatientVM model = dto.ToVM();

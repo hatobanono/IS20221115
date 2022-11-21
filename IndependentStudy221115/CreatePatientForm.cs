@@ -48,7 +48,6 @@ namespace IndependentStudy221115
 			return dbHelper.Select(sql, null)
 				.AsEnumerable()
 				.Select(row => ToVaccineVM(row))
-				.Prepend(new VaccineVM { Id = 0, VaccineName = String.Empty })
 				.ToList();
 		}
 
