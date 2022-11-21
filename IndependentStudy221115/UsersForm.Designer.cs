@@ -101,6 +101,9 @@
 			this.ClientSize = new System.Drawing.Size(340, 409);
 			this.Controls.Add(this.addNewButton);
 			this.Controls.Add(this.dataGridView1);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+			this.MaximizeBox = false;
+			this.MinimizeBox = false;
 			this.Name = "UsersForm";
 			this.Text = "使用者清單";
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

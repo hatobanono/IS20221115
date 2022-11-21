@@ -111,6 +111,9 @@
 			this.ClientSize = new System.Drawing.Size(514, 414);
 			this.Controls.Add(this.addNewButton);
 			this.Controls.Add(this.dataGridView1);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+			this.MaximizeBox = false;
+			this.MinimizeBox = false;
 			this.Name = "HospitalsForm";
 			this.Text = "醫院清單";
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

@@ -41,20 +41,20 @@
 			// 
 			// editButton
 			// 
-			this.editButton.Location = new System.Drawing.Point(43, 142);
+			this.editButton.Location = new System.Drawing.Point(36, 128);
 			this.editButton.Name = "editButton";
 			this.editButton.Size = new System.Drawing.Size(75, 23);
-			this.editButton.TabIndex = 0;
+			this.editButton.TabIndex = 2;
 			this.editButton.Text = "修改";
 			this.editButton.UseVisualStyleBackColor = true;
 			this.editButton.Click += new System.EventHandler(this.editButton_Click);
 			// 
 			// deleteButton
 			// 
-			this.deleteButton.Location = new System.Drawing.Point(124, 142);
+			this.deleteButton.Location = new System.Drawing.Point(124, 128);
 			this.deleteButton.Name = "deleteButton";
 			this.deleteButton.Size = new System.Drawing.Size(75, 23);
-			this.deleteButton.TabIndex = 1;
+			this.deleteButton.TabIndex = 3;
 			this.deleteButton.Text = "刪除";
 			this.deleteButton.UseVisualStyleBackColor = true;
 			this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
@@ -64,7 +64,7 @@
 			this.vcnNameTextBox.Location = new System.Drawing.Point(99, 50);
 			this.vcnNameTextBox.Name = "vcnNameTextBox";
 			this.vcnNameTextBox.Size = new System.Drawing.Size(100, 22);
-			this.vcnNameTextBox.TabIndex = 2;
+			this.vcnNameTextBox.TabIndex = 0;
 			// 
 			// errorProvider1
 			// 
@@ -84,7 +84,7 @@
 			this.countryTextBox.Location = new System.Drawing.Point(99, 78);
 			this.countryTextBox.Name = "countryTextBox";
 			this.countryTextBox.Size = new System.Drawing.Size(100, 22);
-			this.countryTextBox.TabIndex = 2;
+			this.countryTextBox.TabIndex = 1;
 			// 
 			// label2
 			// 
@@ -99,13 +99,16 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(259, 207);
+			this.ClientSize = new System.Drawing.Size(254, 191);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.countryTextBox);
 			this.Controls.Add(this.vcnNameTextBox);
 			this.Controls.Add(this.deleteButton);
 			this.Controls.Add(this.editButton);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+			this.MaximizeBox = false;
+			this.MinimizeBox = false;
 			this.Name = "EditVaccineForm";
 			this.Text = "編輯疫苗";
 			this.Load += new System.EventHandler(this.EditVaccineForm_Load);

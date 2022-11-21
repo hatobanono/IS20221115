@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -74,16 +75,34 @@ namespace IndependentStudy221115
 			// UserVM model = new UserService().Get(id);
 			PatientDTO dto = new PatientDAO().Get(id);
 
-			label7.Text = "健康";
+			var check = new Bitmap(Directory.GetCurrentDirectory() + "\\..\\..\\Infra\\images\\463574.png");
+			var cross = new Bitmap(Directory.GetCurrentDirectory() + "\\..\\..\\Infra\\images\\2569174.png");
+
+			string result = string.Empty;
+
+			
 			label8.Text = string.Empty;
 			label9.Text = string.Empty;
 			if (new DiagnosedService().AccountExists(id))
 			{
-				label7.Text = "確診隔離中";
 				var ds = new DiagnosedService().Get(id);
 				label8.Text = $"{ds.Hospital}\r\n{ds.HospitalAddress}\r\n{ds.HospitalTelephone}";
 				label9.Text = $"{ds.Hotel}\r\n{ds.HotelAddress}\r\n{ds.HotelTelephone}";
+				if (new DiagnosedService().IsStillDiagnosed(dto.Id))
+				{
+					result = "確診隔離中";
+				}
+				else
+				{
+					result = "已解除隔離";
+				}
 			}
+			else
+			{
+				result = "健康狀態";
+			}
+			pictureBox1.Image = (result == "確診隔離中") ? new Bitmap(cross, 20, 20) : new Bitmap(check, 20, 20);
+			label7.Text = result;
 
 			// 把DTO轉型為ViewModel
 			PatientVM model = dto.ToVM();

@@ -42,10 +42,10 @@ namespace IndependentStudy221115
 			// 針對ViewModel進行欄位驗證
 			Dictionary<string, Control> map = new Dictionary<string, Control>(StringComparer.CurrentCultureIgnoreCase)
 			{
-				{"HospitalName", hotelNameTextBox},
+				{"HotelName", hotelNameTextBox},
 				{"Address", addressTextBox},
 				{"Telephone", telephoneTextBox},
-				{"Capacity", capacityTextBox}
+				//{"Capacity", capacityTextBox}
 			};
 
 			bool isValid = ValidationHelper.Validate(model, map, errorProvider1);

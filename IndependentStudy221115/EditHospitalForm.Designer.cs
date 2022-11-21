@@ -44,7 +44,7 @@
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(39, 52);
+			this.label1.Location = new System.Drawing.Point(39, 42);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(32, 12);
 			this.label1.TabIndex = 0;
@@ -52,15 +52,15 @@
 			// 
 			// hospitalNameTextBox
 			// 
-			this.hospitalNameTextBox.Location = new System.Drawing.Point(78, 49);
+			this.hospitalNameTextBox.Location = new System.Drawing.Point(78, 39);
 			this.hospitalNameTextBox.Name = "hospitalNameTextBox";
 			this.hospitalNameTextBox.Size = new System.Drawing.Size(170, 22);
-			this.hospitalNameTextBox.TabIndex = 1;
+			this.hospitalNameTextBox.TabIndex = 0;
 			// 
 			// label2
 			// 
 			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(39, 80);
+			this.label2.Location = new System.Drawing.Point(39, 70);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(32, 12);
 			this.label2.TabIndex = 0;
@@ -68,7 +68,7 @@
 			// 
 			// addressTextBox
 			// 
-			this.addressTextBox.Location = new System.Drawing.Point(78, 77);
+			this.addressTextBox.Location = new System.Drawing.Point(78, 67);
 			this.addressTextBox.Name = "addressTextBox";
 			this.addressTextBox.Size = new System.Drawing.Size(170, 22);
 			this.addressTextBox.TabIndex = 1;
@@ -76,7 +76,7 @@
 			// label3
 			// 
 			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(39, 108);
+			this.label3.Location = new System.Drawing.Point(39, 98);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(32, 12);
 			this.label3.TabIndex = 0;
@@ -84,24 +84,24 @@
 			// 
 			// telephoneTextBox
 			// 
-			this.telephoneTextBox.Location = new System.Drawing.Point(78, 105);
+			this.telephoneTextBox.Location = new System.Drawing.Point(78, 95);
 			this.telephoneTextBox.Name = "telephoneTextBox";
 			this.telephoneTextBox.Size = new System.Drawing.Size(170, 22);
-			this.telephoneTextBox.TabIndex = 1;
+			this.telephoneTextBox.TabIndex = 2;
 			// 
 			// deleteButton
 			// 
-			this.deleteButton.Location = new System.Drawing.Point(173, 147);
+			this.deleteButton.Location = new System.Drawing.Point(173, 137);
 			this.deleteButton.Name = "deleteButton";
 			this.deleteButton.Size = new System.Drawing.Size(75, 23);
-			this.deleteButton.TabIndex = 2;
+			this.deleteButton.TabIndex = 4;
 			this.deleteButton.Text = "刪除";
 			this.deleteButton.UseVisualStyleBackColor = true;
 			this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
 			// 
 			// editButton
 			// 
-			this.editButton.Location = new System.Drawing.Point(78, 147);
+			this.editButton.Location = new System.Drawing.Point(78, 137);
 			this.editButton.Name = "editButton";
 			this.editButton.Size = new System.Drawing.Size(75, 23);
 			this.editButton.TabIndex = 3;
@@ -117,7 +117,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(306, 197);
+			this.ClientSize = new System.Drawing.Size(304, 191);
 			this.Controls.Add(this.editButton);
 			this.Controls.Add(this.deleteButton);
 			this.Controls.Add(this.telephoneTextBox);
@@ -126,6 +126,9 @@
 			this.Controls.Add(this.hospitalNameTextBox);
 			this.Controls.Add(this.addressTextBox);
 			this.Controls.Add(this.label2);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+			this.MaximizeBox = false;
+			this.MinimizeBox = false;
 			this.Name = "EditHospitalForm";
 			this.Text = "編輯醫院";
 			this.Load += new System.EventHandler(this.EditHospitalForm_Load);

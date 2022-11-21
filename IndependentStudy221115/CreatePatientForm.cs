@@ -85,7 +85,6 @@ namespace IndependentStudy221115
 			Dictionary<string, Control> map = new Dictionary<string, Control>(StringComparer.CurrentCultureIgnoreCase)
 			{
 				{"Name", nameTextBox},
-				//{"Gender", passwordTextBox},
 				{"Age", ageTextBox},
 			};
 

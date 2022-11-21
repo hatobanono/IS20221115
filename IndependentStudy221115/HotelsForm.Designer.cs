@@ -30,13 +30,13 @@
 		{
 			this.components = new System.ComponentModel.Container();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
-			this.addNewButton = new System.Windows.Forms.Button();
 			this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.hotelNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.telephoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.capacityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.hotelIndexVMBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.addNewButton = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.hotelIndexVMBindingSource)).BeginInit();
 			this.SuspendLayout();
@@ -61,16 +61,6 @@
 			this.dataGridView1.Size = new System.Drawing.Size(547, 293);
 			this.dataGridView1.TabIndex = 0;
 			this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-			// 
-			// addNewButton
-			// 
-			this.addNewButton.Location = new System.Drawing.Point(431, 345);
-			this.addNewButton.Name = "addNewButton";
-			this.addNewButton.Size = new System.Drawing.Size(95, 23);
-			this.addNewButton.TabIndex = 1;
-			this.addNewButton.Text = "新增防疫旅館";
-			this.addNewButton.UseVisualStyleBackColor = true;
-			this.addNewButton.Click += new System.EventHandler(this.addNewButton_Click);
 			// 
 			// idDataGridViewTextBoxColumn
 			// 
@@ -112,6 +102,16 @@
 			// 
 			this.hotelIndexVMBindingSource.DataSource = typeof(IndependentStudy221115.Models.ViewModels.HotelIndexVM);
 			// 
+			// addNewButton
+			// 
+			this.addNewButton.Location = new System.Drawing.Point(431, 345);
+			this.addNewButton.Name = "addNewButton";
+			this.addNewButton.Size = new System.Drawing.Size(95, 23);
+			this.addNewButton.TabIndex = 1;
+			this.addNewButton.Text = "新增防疫旅館";
+			this.addNewButton.UseVisualStyleBackColor = true;
+			this.addNewButton.Click += new System.EventHandler(this.addNewButton_Click);
+			// 
 			// HotelsForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -119,6 +119,9 @@
 			this.ClientSize = new System.Drawing.Size(571, 401);
 			this.Controls.Add(this.addNewButton);
 			this.Controls.Add(this.dataGridView1);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+			this.MaximizeBox = false;
+			this.MinimizeBox = false;
 			this.Name = "HotelsForm";
 			this.Text = "防疫旅館清單";
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

@@ -44,7 +44,7 @@
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(50, 41);
+			this.label1.Location = new System.Drawing.Point(38, 48);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(32, 12);
 			this.label1.TabIndex = 0;
@@ -52,15 +52,15 @@
 			// 
 			// accountTextBox
 			// 
-			this.accountTextBox.Location = new System.Drawing.Point(89, 38);
+			this.accountTextBox.Location = new System.Drawing.Point(76, 45);
 			this.accountTextBox.Name = "accountTextBox";
-			this.accountTextBox.Size = new System.Drawing.Size(100, 22);
-			this.accountTextBox.TabIndex = 1;
+			this.accountTextBox.Size = new System.Drawing.Size(120, 22);
+			this.accountTextBox.TabIndex = 0;
 			// 
 			// label2
 			// 
 			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(50, 69);
+			this.label2.Location = new System.Drawing.Point(38, 76);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(32, 12);
 			this.label2.TabIndex = 0;
@@ -68,15 +68,15 @@
 			// 
 			// passwordTextBox
 			// 
-			this.passwordTextBox.Location = new System.Drawing.Point(89, 66);
+			this.passwordTextBox.Location = new System.Drawing.Point(76, 73);
 			this.passwordTextBox.Name = "passwordTextBox";
-			this.passwordTextBox.Size = new System.Drawing.Size(100, 22);
+			this.passwordTextBox.Size = new System.Drawing.Size(120, 22);
 			this.passwordTextBox.TabIndex = 1;
 			// 
 			// label3
 			// 
 			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(50, 97);
+			this.label3.Location = new System.Drawing.Point(38, 104);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(32, 12);
 			this.label3.TabIndex = 0;
@@ -84,17 +84,17 @@
 			// 
 			// nickNameTextBox
 			// 
-			this.nickNameTextBox.Location = new System.Drawing.Point(89, 94);
+			this.nickNameTextBox.Location = new System.Drawing.Point(76, 101);
 			this.nickNameTextBox.Name = "nickNameTextBox";
-			this.nickNameTextBox.Size = new System.Drawing.Size(100, 22);
-			this.nickNameTextBox.TabIndex = 1;
+			this.nickNameTextBox.Size = new System.Drawing.Size(120, 22);
+			this.nickNameTextBox.TabIndex = 2;
 			// 
 			// deleteButton
 			// 
-			this.deleteButton.Location = new System.Drawing.Point(123, 122);
+			this.deleteButton.Location = new System.Drawing.Point(121, 129);
 			this.deleteButton.Name = "deleteButton";
 			this.deleteButton.Size = new System.Drawing.Size(75, 23);
-			this.deleteButton.TabIndex = 2;
+			this.deleteButton.TabIndex = 4;
 			this.deleteButton.Text = "刪除";
 			this.deleteButton.UseVisualStyleBackColor = true;
 			this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
@@ -105,7 +105,7 @@
 			// 
 			// editButton
 			// 
-			this.editButton.Location = new System.Drawing.Point(42, 122);
+			this.editButton.Location = new System.Drawing.Point(40, 129);
 			this.editButton.Name = "editButton";
 			this.editButton.Size = new System.Drawing.Size(75, 23);
 			this.editButton.TabIndex = 3;
@@ -117,7 +117,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(252, 176);
+			this.ClientSize = new System.Drawing.Size(254, 191);
 			this.Controls.Add(this.editButton);
 			this.Controls.Add(this.deleteButton);
 			this.Controls.Add(this.nickNameTextBox);
@@ -126,6 +126,9 @@
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.accountTextBox);
 			this.Controls.Add(this.label1);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+			this.MaximizeBox = false;
+			this.MinimizeBox = false;
 			this.Name = "EditUserForm";
 			this.Text = "編輯使用者";
 			this.Load += new System.EventHandler(this.EditUserForm_Load);

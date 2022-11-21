@@ -49,7 +49,9 @@
 			this.label7 = new System.Windows.Forms.Label();
 			this.label8 = new System.Windows.Forms.Label();
 			this.label9 = new System.Windows.Forms.Label();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// deleteButton
@@ -209,7 +211,7 @@
 			// label7
 			// 
 			this.label7.AutoSize = true;
-			this.label7.Location = new System.Drawing.Point(12, 9);
+			this.label7.Location = new System.Drawing.Point(55, 9);
 			this.label7.Name = "label7";
 			this.label7.Size = new System.Drawing.Size(33, 12);
 			this.label7.TabIndex = 23;
@@ -233,11 +235,20 @@
 			this.label9.TabIndex = 25;
 			this.label9.Text = "label9";
 			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.Location = new System.Drawing.Point(12, 9);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(37, 32);
+			this.pictureBox1.TabIndex = 26;
+			this.pictureBox1.TabStop = false;
+			// 
 			// EditPatientForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(286, 402);
+			this.Controls.Add(this.pictureBox1);
 			this.Controls.Add(this.label9);
 			this.Controls.Add(this.label8);
 			this.Controls.Add(this.label7);
@@ -257,10 +268,14 @@
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.nameTextBox);
 			this.Controls.Add(this.label1);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+			this.MaximizeBox = false;
+			this.MinimizeBox = false;
 			this.Name = "EditPatientForm";
 			this.Text = "編輯病患";
 			this.Load += new System.EventHandler(this.EditPatientForm_Load);
 			((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -288,5 +303,6 @@
 		private System.Windows.Forms.Label label9;
 		private System.Windows.Forms.Label label8;
 		private System.Windows.Forms.Label label7;
+		private System.Windows.Forms.PictureBox pictureBox1;
 	}
 }

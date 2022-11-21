@@ -24,6 +24,7 @@ namespace IndependentStudy221115.Models.Services
 
 		public void Create(HotelVM model)
 		{
+			if (model.Capacity == -1) throw new Exception("容納人數必須填寫");
 			bool isExists = AccountExists(model.HotelName);
 			if (isExists) throw new Exception("防疫旅館已存在");
 
@@ -65,6 +66,7 @@ namespace IndependentStudy221115.Models.Services
 
 		public void Update(HotelVM model)
 		{
+			if (model.Capacity == -1) throw new Exception("容納人數必須填寫");
 			bool isExists = AccountExists(model);
 			if (isExists) throw new Exception("防疫旅館已存在");
 

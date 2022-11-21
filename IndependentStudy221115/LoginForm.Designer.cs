@@ -95,6 +95,9 @@
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.accountTextBox);
 			this.Controls.Add(this.label1);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+			this.MaximizeBox = false;
+			this.MinimizeBox = false;
 			this.Name = "LoginForm";
 			this.Text = "登入系統";
 			((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();

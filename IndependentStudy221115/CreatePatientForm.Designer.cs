@@ -52,7 +52,7 @@
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(69, 45);
+			this.label1.Location = new System.Drawing.Point(63, 25);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(32, 12);
 			this.label1.TabIndex = 0;
@@ -60,18 +60,18 @@
 			// 
 			// nameTextBox
 			// 
-			this.nameTextBox.Location = new System.Drawing.Point(108, 42);
+			this.nameTextBox.Location = new System.Drawing.Point(102, 22);
 			this.nameTextBox.Name = "nameTextBox";
 			this.nameTextBox.Size = new System.Drawing.Size(100, 22);
-			this.nameTextBox.TabIndex = 1;
+			this.nameTextBox.TabIndex = 0;
 			// 
 			// gender1RadioButton
 			// 
 			this.gender1RadioButton.AutoSize = true;
-			this.gender1RadioButton.Location = new System.Drawing.Point(108, 70);
+			this.gender1RadioButton.Location = new System.Drawing.Point(102, 50);
 			this.gender1RadioButton.Name = "gender1RadioButton";
 			this.gender1RadioButton.Size = new System.Drawing.Size(35, 16);
-			this.gender1RadioButton.TabIndex = 2;
+			this.gender1RadioButton.TabIndex = 1;
 			this.gender1RadioButton.Tag = "1";
 			this.gender1RadioButton.Text = "男";
 			this.gender1RadioButton.UseVisualStyleBackColor = true;
@@ -79,7 +79,7 @@
 			// label2
 			// 
 			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(69, 70);
+			this.label2.Location = new System.Drawing.Point(63, 50);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(29, 12);
 			this.label2.TabIndex = 3;
@@ -88,7 +88,7 @@
 			// gender0RadioButton
 			// 
 			this.gender0RadioButton.AutoSize = true;
-			this.gender0RadioButton.Location = new System.Drawing.Point(173, 70);
+			this.gender0RadioButton.Location = new System.Drawing.Point(167, 50);
 			this.gender0RadioButton.Name = "gender0RadioButton";
 			this.gender0RadioButton.Size = new System.Drawing.Size(35, 16);
 			this.gender0RadioButton.TabIndex = 2;
@@ -99,7 +99,7 @@
 			// label3
 			// 
 			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(69, 95);
+			this.label3.Location = new System.Drawing.Point(63, 75);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(32, 12);
 			this.label3.TabIndex = 0;
@@ -107,15 +107,15 @@
 			// 
 			// ageTextBox
 			// 
-			this.ageTextBox.Location = new System.Drawing.Point(108, 92);
+			this.ageTextBox.Location = new System.Drawing.Point(102, 72);
 			this.ageTextBox.Name = "ageTextBox";
 			this.ageTextBox.Size = new System.Drawing.Size(100, 22);
-			this.ageTextBox.TabIndex = 1;
+			this.ageTextBox.TabIndex = 2;
 			// 
 			// label4
 			// 
 			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(34, 123);
+			this.label4.Location = new System.Drawing.Point(28, 103);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(68, 12);
 			this.label4.TabIndex = 4;
@@ -126,10 +126,10 @@
 			this.comboBox1.DataSource = this.vaccineVMBindingSource;
 			this.comboBox1.DisplayMember = "VaccineName";
 			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Location = new System.Drawing.Point(108, 120);
+			this.comboBox1.Location = new System.Drawing.Point(102, 100);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(121, 20);
-			this.comboBox1.TabIndex = 5;
+			this.comboBox1.TabIndex = 3;
 			this.comboBox1.ValueMember = "Id";
 			// 
 			// vaccineVMBindingSource
@@ -139,7 +139,7 @@
 			// label5
 			// 
 			this.label5.AutoSize = true;
-			this.label5.Location = new System.Drawing.Point(34, 149);
+			this.label5.Location = new System.Drawing.Point(28, 129);
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(68, 12);
 			this.label5.TabIndex = 4;
@@ -150,16 +150,16 @@
 			this.comboBox2.DataSource = this.vaccineVMBindingSource;
 			this.comboBox2.DisplayMember = "VaccineName";
 			this.comboBox2.FormattingEnabled = true;
-			this.comboBox2.Location = new System.Drawing.Point(108, 146);
+			this.comboBox2.Location = new System.Drawing.Point(102, 126);
 			this.comboBox2.Name = "comboBox2";
 			this.comboBox2.Size = new System.Drawing.Size(121, 20);
-			this.comboBox2.TabIndex = 5;
+			this.comboBox2.TabIndex = 4;
 			this.comboBox2.ValueMember = "Id";
 			// 
 			// label6
 			// 
 			this.label6.AutoSize = true;
-			this.label6.Location = new System.Drawing.Point(34, 175);
+			this.label6.Location = new System.Drawing.Point(28, 155);
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(68, 12);
 			this.label6.TabIndex = 4;
@@ -170,7 +170,7 @@
 			this.comboBox3.DataSource = this.vaccineVMBindingSource;
 			this.comboBox3.DisplayMember = "VaccineName";
 			this.comboBox3.FormattingEnabled = true;
-			this.comboBox3.Location = new System.Drawing.Point(108, 172);
+			this.comboBox3.Location = new System.Drawing.Point(102, 152);
 			this.comboBox3.Name = "comboBox3";
 			this.comboBox3.Size = new System.Drawing.Size(121, 20);
 			this.comboBox3.TabIndex = 5;
@@ -178,7 +178,7 @@
 			// 
 			// saveButton
 			// 
-			this.saveButton.Location = new System.Drawing.Point(118, 198);
+			this.saveButton.Location = new System.Drawing.Point(112, 178);
 			this.saveButton.Name = "saveButton";
 			this.saveButton.Size = new System.Drawing.Size(75, 23);
 			this.saveButton.TabIndex = 6;
@@ -192,9 +192,10 @@
 			// 
 			// CreatePatientForm
 			// 
+			this.AcceptButton = this.saveButton;
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(318, 264);
+			this.ClientSize = new System.Drawing.Size(270, 220);
 			this.Controls.Add(this.saveButton);
 			this.Controls.Add(this.comboBox3);
 			this.Controls.Add(this.label6);
@@ -209,6 +210,9 @@
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.nameTextBox);
 			this.Controls.Add(this.label1);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+			this.MaximizeBox = false;
+			this.MinimizeBox = false;
 			this.Name = "CreatePatientForm";
 			this.Text = "新增病患";
 			((System.ComponentModel.ISupportInitialize)(this.vaccineVMBindingSource)).EndInit();

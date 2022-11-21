@@ -42,25 +42,25 @@
 			// 
 			// saveButton
 			// 
-			this.saveButton.Location = new System.Drawing.Point(106, 127);
+			this.saveButton.Location = new System.Drawing.Point(79, 114);
 			this.saveButton.Name = "saveButton";
 			this.saveButton.Size = new System.Drawing.Size(75, 23);
-			this.saveButton.TabIndex = 4;
+			this.saveButton.TabIndex = 3;
 			this.saveButton.Text = "新增";
 			this.saveButton.UseVisualStyleBackColor = true;
 			this.saveButton.Click += new System.EventHandler(this.saveButton_Click_1);
 			// 
 			// nickNameTextBox
 			// 
-			this.nickNameTextBox.Location = new System.Drawing.Point(81, 99);
+			this.nickNameTextBox.Location = new System.Drawing.Point(79, 80);
 			this.nickNameTextBox.Name = "nickNameTextBox";
 			this.nickNameTextBox.Size = new System.Drawing.Size(100, 22);
-			this.nickNameTextBox.TabIndex = 3;
+			this.nickNameTextBox.TabIndex = 2;
 			// 
 			// label3
 			// 
 			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(42, 102);
+			this.label3.Location = new System.Drawing.Point(40, 83);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(32, 12);
 			this.label3.TabIndex = 3;
@@ -68,15 +68,15 @@
 			// 
 			// passwordTextBox
 			// 
-			this.passwordTextBox.Location = new System.Drawing.Point(81, 71);
+			this.passwordTextBox.Location = new System.Drawing.Point(79, 52);
 			this.passwordTextBox.Name = "passwordTextBox";
 			this.passwordTextBox.Size = new System.Drawing.Size(100, 22);
-			this.passwordTextBox.TabIndex = 2;
+			this.passwordTextBox.TabIndex = 1;
 			// 
 			// label2
 			// 
 			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(42, 74);
+			this.label2.Location = new System.Drawing.Point(40, 55);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(32, 12);
 			this.label2.TabIndex = 4;
@@ -84,15 +84,15 @@
 			// 
 			// accountTextBox
 			// 
-			this.accountTextBox.Location = new System.Drawing.Point(81, 43);
+			this.accountTextBox.Location = new System.Drawing.Point(79, 24);
 			this.accountTextBox.Name = "accountTextBox";
 			this.accountTextBox.Size = new System.Drawing.Size(100, 22);
-			this.accountTextBox.TabIndex = 1;
+			this.accountTextBox.TabIndex = 0;
 			// 
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(42, 46);
+			this.label1.Location = new System.Drawing.Point(40, 27);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(32, 12);
 			this.label1.TabIndex = 5;
@@ -104,9 +104,10 @@
 			// 
 			// CreateUserForm
 			// 
+			this.AcceptButton = this.saveButton;
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(240, 191);
+			this.ClientSize = new System.Drawing.Size(240, 149);
 			this.Controls.Add(this.saveButton);
 			this.Controls.Add(this.nickNameTextBox);
 			this.Controls.Add(this.label3);
@@ -114,6 +115,9 @@
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.accountTextBox);
 			this.Controls.Add(this.label1);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+			this.MaximizeBox = false;
+			this.MinimizeBox = false;
 			this.Name = "CreateUserForm";
 			this.Text = "新增使用者";
 			((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
