@@ -30,7 +30,6 @@
 		{
 			this.components = new System.ComponentModel.Container();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
-			this.patientIndexVMBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.addNewButton = new System.Windows.Forms.Button();
 			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
 			this.管理使用者ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -39,18 +38,19 @@
 			this.醫院管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.登出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.label1 = new System.Windows.Forms.Label();
-			this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Image = new System.Windows.Forms.DataGridViewImageColumn();
 			this.StrIsDiagnosed = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.genderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.ageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.firstVcnDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.secondVcnDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.thirdVcnDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.patientIndexVMBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.patientIndexVMBindingSource)).BeginInit();
 			this.menuStrip1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.patientIndexVMBindingSource)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// dataGridView1
@@ -77,10 +77,6 @@
 			this.dataGridView1.Size = new System.Drawing.Size(896, 292);
 			this.dataGridView1.TabIndex = 0;
 			this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-			// 
-			// patientIndexVMBindingSource
-			// 
-			this.patientIndexVMBindingSource.DataSource = typeof(IndependentStudy221115.Models.ViewModels.PatientIndexVM);
 			// 
 			// addNewButton
 			// 
@@ -150,14 +146,6 @@
 			this.label1.TabIndex = 3;
 			this.label1.Text = "label1";
 			// 
-			// idDataGridViewTextBoxColumn
-			// 
-			this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-			this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-			this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-			this.idDataGridViewTextBoxColumn.ReadOnly = true;
-			this.idDataGridViewTextBoxColumn.Width = 50;
-			// 
 			// Image
 			// 
 			this.Image.DataPropertyName = "Image";
@@ -171,6 +159,14 @@
 			this.StrIsDiagnosed.HeaderText = "StrIsDiagnosed";
 			this.StrIsDiagnosed.Name = "StrIsDiagnosed";
 			this.StrIsDiagnosed.ReadOnly = true;
+			// 
+			// idDataGridViewTextBoxColumn
+			// 
+			this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+			this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+			this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+			this.idDataGridViewTextBoxColumn.ReadOnly = true;
+			this.idDataGridViewTextBoxColumn.Width = 50;
 			// 
 			// nameDataGridViewTextBoxColumn
 			// 
@@ -214,6 +210,10 @@
 			this.thirdVcnDataGridViewTextBoxColumn.Name = "thirdVcnDataGridViewTextBoxColumn";
 			this.thirdVcnDataGridViewTextBoxColumn.ReadOnly = true;
 			// 
+			// patientIndexVMBindingSource
+			// 
+			this.patientIndexVMBindingSource.DataSource = typeof(IndependentStudy221115.Models.ViewModels.PatientIndexVM);
+			// 
 			// PatientsForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -225,12 +225,12 @@
 			this.Controls.Add(this.menuStrip1);
 			this.MainMenuStrip = this.menuStrip1;
 			this.Name = "PatientsForm";
-			this.Text = "PatientsForm";
+			this.Text = "病患清單";
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PatientsForm_FormClosing);
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.patientIndexVMBindingSource)).EndInit();
 			this.menuStrip1.ResumeLayout(false);
 			this.menuStrip1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.patientIndexVMBindingSource)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

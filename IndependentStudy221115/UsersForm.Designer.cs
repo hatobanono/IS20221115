@@ -54,7 +54,7 @@
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.ReadOnly = true;
 			this.dataGridView1.RowTemplate.Height = 24;
-			this.dataGridView1.Size = new System.Drawing.Size(385, 301);
+			this.dataGridView1.Size = new System.Drawing.Size(316, 301);
 			this.dataGridView1.TabIndex = 0;
 			this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
 			// 
@@ -86,7 +86,7 @@
 			// 
 			// addNewButton
 			// 
-			this.addNewButton.Location = new System.Drawing.Point(288, 354);
+			this.addNewButton.Location = new System.Drawing.Point(207, 352);
 			this.addNewButton.Name = "addNewButton";
 			this.addNewButton.Size = new System.Drawing.Size(75, 23);
 			this.addNewButton.TabIndex = 1;
@@ -98,11 +98,11 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(409, 409);
+			this.ClientSize = new System.Drawing.Size(340, 409);
 			this.Controls.Add(this.addNewButton);
 			this.Controls.Add(this.dataGridView1);
 			this.Name = "UsersForm";
-			this.Text = "使用者表單";
+			this.Text = "使用者清單";
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.userIndexVMBindingSource)).EndInit();
 			this.ResumeLayout(false);

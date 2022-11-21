@@ -30,12 +30,12 @@
 		{
 			this.components = new System.ComponentModel.Container();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
-			this.addNewButton = new System.Windows.Forms.Button();
-			this.hospitalIndexVMBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.hospitalNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.telephoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.hospitalIndexVMBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.addNewButton = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.hospitalIndexVMBindingSource)).BeginInit();
 			this.SuspendLayout();
@@ -59,20 +59,6 @@
 			this.dataGridView1.Size = new System.Drawing.Size(489, 304);
 			this.dataGridView1.TabIndex = 0;
 			this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-			// 
-			// addNewButton
-			// 
-			this.addNewButton.Location = new System.Drawing.Point(408, 362);
-			this.addNewButton.Name = "addNewButton";
-			this.addNewButton.Size = new System.Drawing.Size(75, 23);
-			this.addNewButton.TabIndex = 1;
-			this.addNewButton.Text = "新增醫院";
-			this.addNewButton.UseVisualStyleBackColor = true;
-			this.addNewButton.Click += new System.EventHandler(this.addNewButton_Click);
-			// 
-			// hospitalIndexVMBindingSource
-			// 
-			this.hospitalIndexVMBindingSource.DataSource = typeof(IndependentStudy221115.Models.ViewModels.HospitalIndexVM);
 			// 
 			// idDataGridViewTextBoxColumn
 			// 
@@ -104,6 +90,20 @@
 			this.telephoneDataGridViewTextBoxColumn.Name = "telephoneDataGridViewTextBoxColumn";
 			this.telephoneDataGridViewTextBoxColumn.ReadOnly = true;
 			// 
+			// hospitalIndexVMBindingSource
+			// 
+			this.hospitalIndexVMBindingSource.DataSource = typeof(IndependentStudy221115.Models.ViewModels.HospitalIndexVM);
+			// 
+			// addNewButton
+			// 
+			this.addNewButton.Location = new System.Drawing.Point(408, 362);
+			this.addNewButton.Name = "addNewButton";
+			this.addNewButton.Size = new System.Drawing.Size(75, 23);
+			this.addNewButton.TabIndex = 1;
+			this.addNewButton.Text = "新增醫院";
+			this.addNewButton.UseVisualStyleBackColor = true;
+			this.addNewButton.Click += new System.EventHandler(this.addNewButton_Click);
+			// 
 			// HospitalsForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -112,7 +112,7 @@
 			this.Controls.Add(this.addNewButton);
 			this.Controls.Add(this.dataGridView1);
 			this.Name = "HospitalsForm";
-			this.Text = "醫院列表";
+			this.Text = "醫院清單";
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.hospitalIndexVMBindingSource)).EndInit();
 			this.ResumeLayout(false);

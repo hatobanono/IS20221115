@@ -127,7 +127,7 @@
 			this.Controls.Add(this.accountTextBox);
 			this.Controls.Add(this.label1);
 			this.Name = "EditUserForm";
-			this.Text = "EditUserForm";
+			this.Text = "編輯使用者";
 			this.Load += new System.EventHandler(this.EditUserForm_Load);
 			((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
 			this.ResumeLayout(false);

@@ -30,11 +30,11 @@
 		{
 			this.components = new System.ComponentModel.Container();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
-			this.addNewButton = new System.Windows.Forms.Button();
-			this.vaccineIndexVMBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.vaccineNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.countryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.vaccineIndexVMBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.addNewButton = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.vaccineIndexVMBindingSource)).BeginInit();
 			this.SuspendLayout();
@@ -58,20 +58,6 @@
 			this.dataGridView1.TabIndex = 0;
 			this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
 			// 
-			// addNewButton
-			// 
-			this.addNewButton.Location = new System.Drawing.Point(209, 354);
-			this.addNewButton.Name = "addNewButton";
-			this.addNewButton.Size = new System.Drawing.Size(75, 23);
-			this.addNewButton.TabIndex = 1;
-			this.addNewButton.Text = "新增疫苗";
-			this.addNewButton.UseVisualStyleBackColor = true;
-			this.addNewButton.Click += new System.EventHandler(this.addNewButton_Click);
-			// 
-			// vaccineIndexVMBindingSource
-			// 
-			this.vaccineIndexVMBindingSource.DataSource = typeof(IndependentStudy221115.Models.ViewModels.VaccineIndexVM);
-			// 
 			// idDataGridViewTextBoxColumn
 			// 
 			this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
@@ -93,6 +79,20 @@
 			this.countryDataGridViewTextBoxColumn.Name = "countryDataGridViewTextBoxColumn";
 			this.countryDataGridViewTextBoxColumn.ReadOnly = true;
 			// 
+			// vaccineIndexVMBindingSource
+			// 
+			this.vaccineIndexVMBindingSource.DataSource = typeof(IndependentStudy221115.Models.ViewModels.VaccineIndexVM);
+			// 
+			// addNewButton
+			// 
+			this.addNewButton.Location = new System.Drawing.Point(209, 354);
+			this.addNewButton.Name = "addNewButton";
+			this.addNewButton.Size = new System.Drawing.Size(75, 23);
+			this.addNewButton.TabIndex = 1;
+			this.addNewButton.Text = "新增疫苗";
+			this.addNewButton.UseVisualStyleBackColor = true;
+			this.addNewButton.Click += new System.EventHandler(this.addNewButton_Click);
+			// 
 			// VaccinesForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -101,7 +101,7 @@
 			this.Controls.Add(this.addNewButton);
 			this.Controls.Add(this.dataGridView1);
 			this.Name = "VaccinesForm";
-			this.Text = "疫苗表";
+			this.Text = "疫苗清單";
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.vaccineIndexVMBindingSource)).EndInit();
 			this.ResumeLayout(false);

@@ -38,15 +38,15 @@
 			this.ageTextBox = new System.Windows.Forms.TextBox();
 			this.label4 = new System.Windows.Forms.Label();
 			this.comboBox1 = new System.Windows.Forms.ComboBox();
+			this.vaccineVMBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.label5 = new System.Windows.Forms.Label();
 			this.comboBox2 = new System.Windows.Forms.ComboBox();
 			this.label6 = new System.Windows.Forms.Label();
 			this.comboBox3 = new System.Windows.Forms.ComboBox();
 			this.saveButton = new System.Windows.Forms.Button();
 			this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-			this.vaccineVMBindingSource = new System.Windows.Forms.BindingSource(this.components);
-			((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.vaccineVMBindingSource)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -132,6 +132,10 @@
 			this.comboBox1.TabIndex = 5;
 			this.comboBox1.ValueMember = "Id";
 			// 
+			// vaccineVMBindingSource
+			// 
+			this.vaccineVMBindingSource.DataSource = typeof(IndependentStudy221115.Models.ViewModels.VaccineVM);
+			// 
 			// label5
 			// 
 			this.label5.AutoSize = true;
@@ -186,10 +190,6 @@
 			// 
 			this.errorProvider1.ContainerControl = this;
 			// 
-			// vaccineVMBindingSource
-			// 
-			this.vaccineVMBindingSource.DataSource = typeof(IndependentStudy221115.Models.ViewModels.VaccineVM);
-			// 
 			// CreatePatientForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -210,9 +210,9 @@
 			this.Controls.Add(this.nameTextBox);
 			this.Controls.Add(this.label1);
 			this.Name = "CreatePatientForm";
-			this.Text = "CreatePatientForm";
-			((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+			this.Text = "新增病患";
 			((System.ComponentModel.ISupportInitialize)(this.vaccineVMBindingSource)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

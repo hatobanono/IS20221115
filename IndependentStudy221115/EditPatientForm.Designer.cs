@@ -258,7 +258,7 @@
 			this.Controls.Add(this.nameTextBox);
 			this.Controls.Add(this.label1);
 			this.Name = "EditPatientForm";
-			this.Text = "EditPatientForm";
+			this.Text = "編輯病患";
 			this.Load += new System.EventHandler(this.EditPatientForm_Load);
 			((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
 			this.ResumeLayout(false);

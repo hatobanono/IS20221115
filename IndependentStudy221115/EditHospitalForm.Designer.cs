@@ -127,7 +127,7 @@
 			this.Controls.Add(this.addressTextBox);
 			this.Controls.Add(this.label2);
 			this.Name = "EditHospitalForm";
-			this.Text = "EditHospitalForm";
+			this.Text = "編輯醫院";
 			this.Load += new System.EventHandler(this.EditHospitalForm_Load);
 			((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
 			this.ResumeLayout(false);

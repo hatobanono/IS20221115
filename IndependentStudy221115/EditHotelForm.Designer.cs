@@ -147,7 +147,7 @@
 			this.Controls.Add(this.hotelNameTextBox);
 			this.Controls.Add(this.label1);
 			this.Name = "EditHotelForm";
-			this.Text = "EditHotelForm";
+			this.Text = "編輯防疫旅館";
 			this.Load += new System.EventHandler(this.EditHotelForm_Load);
 			((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
 			this.ResumeLayout(false);

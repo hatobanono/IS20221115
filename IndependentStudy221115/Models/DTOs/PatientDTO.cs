@@ -3,6 +3,7 @@ using IndependentStudy221115.Models.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -42,8 +43,8 @@ namespace IndependentStudy221115.Models.DTOs
 
 		public static PatientIndexVM ToIndexVM(this PatientDTO dto)
 		{
-			var check = new Bitmap("C:\\Users\\ispan\\source\\repos\\IS20221115\\IndependentStudy221115\\Infra\\images\\463574.png");
-			var cross = new Bitmap("C:\\Users\\ispan\\source\\repos\\IS20221115\\IndependentStudy221115\\Infra\\images\\2569174.png");
+			var check = new Bitmap(Directory.GetCurrentDirectory() +"\\..\\..\\Infra\\images\\463574.png");
+			var cross = new Bitmap(Directory.GetCurrentDirectory() + "\\..\\..\\Infra\\images\\2569174.png");
 
 			string result = string.Empty;
 			if (dto.IsDiagnosed.HasValue)

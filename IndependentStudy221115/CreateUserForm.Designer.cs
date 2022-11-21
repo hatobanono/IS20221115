@@ -115,7 +115,7 @@
 			this.Controls.Add(this.accountTextBox);
 			this.Controls.Add(this.label1);
 			this.Name = "CreateUserForm";
-			this.Text = "CreateUserForm";
+			this.Text = "新增使用者";
 			((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();

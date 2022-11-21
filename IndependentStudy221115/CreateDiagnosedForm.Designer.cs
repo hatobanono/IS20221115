@@ -146,7 +146,7 @@
 			this.Controls.Add(this.dateTimePicker1);
 			this.Controls.Add(this.label1);
 			this.Name = "CreateDiagnosedForm";
-			this.Text = "CreateDiagnosedForm";
+			this.Text = "確診通報";
 			this.Load += new System.EventHandler(this.CreateDiagnosedForm_Load);
 			((System.ComponentModel.ISupportInitialize)(this.hospitalIndexVMBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.hotelIndexVMBindingSource)).EndInit();
