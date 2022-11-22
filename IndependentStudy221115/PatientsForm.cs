@@ -7,6 +7,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,10 +19,26 @@ namespace IndependentStudy221115
 		private PatientIndexVM[] patients = null;
 		public PatientsForm(string account)
 		{
+			var usersIcon = new Bitmap(@"..\..\Infra\images\3394785.png");
+			var vaccineIcon = new Bitmap(@"..\..\Infra\images\1086932.png");
+			var hotelIcon = new Bitmap(@"..\..\Infra\images\905462.png");
+			var hospitalIcon = new Bitmap(@"..\..\Infra\images\33777.png");
+			var logoutIcon = new Bitmap(@"..\..\Infra\images\660350.png");
 			InitializeComponent();
 			DisplayPatients();
 			var dto = new UserDAO().Get(account);
 			label1.Text = $"歡迎，{dto.NickName}";
+			this.usersFormButton.Image = new Bitmap(usersIcon, 20, 20);
+			this.vaccinesFormButton.Image = new Bitmap(vaccineIcon, 20, 20);
+			this.hotelsFormButton.Image = new Bitmap(hotelIcon, 20, 20);
+			this.hospitalsFormButton.Image = new Bitmap(hospitalIcon, 20, 20);
+			this.logoutButton.Image = new Bitmap(logoutIcon, 20, 20);
+
+			this.usersFormButton.TextImageRelation = TextImageRelation.ImageBeforeText;
+			this.vaccinesFormButton.TextImageRelation = TextImageRelation.ImageBeforeText;
+			this.hospitalsFormButton.TextImageRelation = TextImageRelation.ImageBeforeText;
+			this.hotelsFormButton.TextImageRelation = TextImageRelation.ImageBeforeText;
+			this.logoutButton.TextImageRelation = TextImageRelation.ImageBeforeText;
 		}
 
 		private void DisplayPatients()
@@ -67,38 +84,38 @@ namespace IndependentStudy221115
 			}
 		}
 
-		private void 管理使用者ToolStripMenuItem_Click(object sender, EventArgs e)
+		private void PatientsForm_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			this.Owner.Show();
+		}
+		
+		private void usersFormButton_Click(object sender, EventArgs e)
 		{
 			var frm = new UsersForm();
 			frm.Show();
 		}
 
-		private void 管理疫苗ToolStripMenuItem_Click(object sender, EventArgs e)
+		private void vaccinesFormButton_Click(object sender, EventArgs e)
 		{
 			var frm = new VaccinesForm();
 			frm.Show();
 		}
 
-		private void 防疫旅館管理ToolStripMenuItem_Click(object sender, EventArgs e)
+		private void hotelsFormButton_Click(object sender, EventArgs e)
 		{
 			var frm = new HotelsForm();
 			frm.Show();
 		}
 
-		private void 醫院管理ToolStripMenuItem_Click(object sender, EventArgs e)
+		private void hospitalsFormButton_Click(object sender, EventArgs e)
 		{
 			var frm = new HospitalsForm();
 			frm.Show();
 		}
 
-		private void 登出ToolStripMenuItem_Click(object sender, EventArgs e)
+		private void logoutButton_Click(object sender, EventArgs e)
 		{
 			this.Close();
-		}
-
-		private void PatientsForm_FormClosing(object sender, FormClosingEventArgs e)
-		{
-			this.Owner.Show();
 		}
 	}
 }

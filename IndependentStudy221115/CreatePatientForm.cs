@@ -85,6 +85,7 @@ namespace IndependentStudy221115
 			Dictionary<string, Control> map = new Dictionary<string, Control>(StringComparer.CurrentCultureIgnoreCase)
 			{
 				{"Name", nameTextBox},
+				//{"Gender", gender0RadioButton}
 				{"Age", ageTextBox},
 			};
 
@@ -95,7 +96,6 @@ namespace IndependentStudy221115
 			// 如果通過驗證,就新增記錄
 			// 將ViewModel轉成DTO
 			PatientDTO dto = model.ToDTO();
-
 
 			try
 			{

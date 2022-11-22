@@ -41,40 +41,48 @@
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(44, 63);
+			this.label1.Location = new System.Drawing.Point(37, 45);
+			this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(32, 12);
+			this.label1.Size = new System.Drawing.Size(37, 17);
 			this.label1.TabIndex = 0;
 			this.label1.Text = "帳號:";
 			// 
 			// accountTextBox
 			// 
-			this.accountTextBox.Location = new System.Drawing.Point(83, 60);
+			this.accountTextBox.Location = new System.Drawing.Point(88, 41);
+			this.accountTextBox.Margin = new System.Windows.Forms.Padding(4);
+			this.accountTextBox.MaxLength = 50;
 			this.accountTextBox.Name = "accountTextBox";
-			this.accountTextBox.Size = new System.Drawing.Size(100, 22);
+			this.accountTextBox.Size = new System.Drawing.Size(177, 25);
 			this.accountTextBox.TabIndex = 0;
 			// 
 			// label2
 			// 
 			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(44, 91);
+			this.label2.Location = new System.Drawing.Point(37, 85);
+			this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(32, 12);
+			this.label2.Size = new System.Drawing.Size(37, 17);
 			this.label2.TabIndex = 0;
 			this.label2.Text = "密碼:";
 			// 
 			// passwordTextBox
 			// 
-			this.passwordTextBox.Location = new System.Drawing.Point(83, 88);
+			this.passwordTextBox.Location = new System.Drawing.Point(88, 81);
+			this.passwordTextBox.Margin = new System.Windows.Forms.Padding(4);
+			this.passwordTextBox.MaxLength = 50;
 			this.passwordTextBox.Name = "passwordTextBox";
-			this.passwordTextBox.Size = new System.Drawing.Size(100, 22);
+			this.passwordTextBox.Size = new System.Drawing.Size(177, 25);
 			this.passwordTextBox.TabIndex = 1;
+			this.passwordTextBox.UseSystemPasswordChar = true;
 			// 
 			// loginButton
 			// 
-			this.loginButton.Location = new System.Drawing.Point(95, 116);
+			this.loginButton.Location = new System.Drawing.Point(128, 120);
+			this.loginButton.Margin = new System.Windows.Forms.Padding(4);
 			this.loginButton.Name = "loginButton";
-			this.loginButton.Size = new System.Drawing.Size(75, 23);
+			this.loginButton.Size = new System.Drawing.Size(100, 33);
 			this.loginButton.TabIndex = 2;
 			this.loginButton.Text = "登入";
 			this.loginButton.UseVisualStyleBackColor = true;
@@ -87,15 +95,17 @@
 			// LoginForm
 			// 
 			this.AcceptButton = this.loginButton;
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(254, 191);
+			this.ClientSize = new System.Drawing.Size(339, 186);
 			this.Controls.Add(this.loginButton);
 			this.Controls.Add(this.passwordTextBox);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.accountTextBox);
 			this.Controls.Add(this.label1);
+			this.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+			this.Margin = new System.Windows.Forms.Padding(4);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "LoginForm";

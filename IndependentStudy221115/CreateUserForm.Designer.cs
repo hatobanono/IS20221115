@@ -42,9 +42,10 @@
 			// 
 			// saveButton
 			// 
-			this.saveButton.Location = new System.Drawing.Point(79, 114);
+			this.saveButton.Location = new System.Drawing.Point(116, 145);
+			this.saveButton.Margin = new System.Windows.Forms.Padding(4);
 			this.saveButton.Name = "saveButton";
-			this.saveButton.Size = new System.Drawing.Size(75, 23);
+			this.saveButton.Size = new System.Drawing.Size(100, 33);
 			this.saveButton.TabIndex = 3;
 			this.saveButton.Text = "新增";
 			this.saveButton.UseVisualStyleBackColor = true;
@@ -52,49 +53,58 @@
 			// 
 			// nickNameTextBox
 			// 
-			this.nickNameTextBox.Location = new System.Drawing.Point(79, 80);
+			this.nickNameTextBox.Location = new System.Drawing.Point(100, 96);
+			this.nickNameTextBox.Margin = new System.Windows.Forms.Padding(4);
+			this.nickNameTextBox.MaxLength = 50;
 			this.nickNameTextBox.Name = "nickNameTextBox";
-			this.nickNameTextBox.Size = new System.Drawing.Size(100, 22);
+			this.nickNameTextBox.Size = new System.Drawing.Size(132, 25);
 			this.nickNameTextBox.TabIndex = 2;
 			// 
 			// label3
 			// 
 			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(40, 83);
+			this.label3.Location = new System.Drawing.Point(55, 99);
+			this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(32, 12);
+			this.label3.Size = new System.Drawing.Size(37, 17);
 			this.label3.TabIndex = 3;
 			this.label3.Text = "暱稱:";
 			// 
 			// passwordTextBox
 			// 
-			this.passwordTextBox.Location = new System.Drawing.Point(79, 52);
+			this.passwordTextBox.Location = new System.Drawing.Point(100, 57);
+			this.passwordTextBox.Margin = new System.Windows.Forms.Padding(4);
+			this.passwordTextBox.MaxLength = 50;
 			this.passwordTextBox.Name = "passwordTextBox";
-			this.passwordTextBox.Size = new System.Drawing.Size(100, 22);
+			this.passwordTextBox.Size = new System.Drawing.Size(132, 25);
 			this.passwordTextBox.TabIndex = 1;
 			// 
 			// label2
 			// 
 			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(40, 55);
+			this.label2.Location = new System.Drawing.Point(55, 60);
+			this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(32, 12);
+			this.label2.Size = new System.Drawing.Size(37, 17);
 			this.label2.TabIndex = 4;
 			this.label2.Text = "密碼:";
 			// 
 			// accountTextBox
 			// 
-			this.accountTextBox.Location = new System.Drawing.Point(79, 24);
+			this.accountTextBox.Location = new System.Drawing.Point(100, 17);
+			this.accountTextBox.Margin = new System.Windows.Forms.Padding(4);
+			this.accountTextBox.MaxLength = 50;
 			this.accountTextBox.Name = "accountTextBox";
-			this.accountTextBox.Size = new System.Drawing.Size(100, 22);
+			this.accountTextBox.Size = new System.Drawing.Size(132, 25);
 			this.accountTextBox.TabIndex = 0;
 			// 
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(40, 27);
+			this.label1.Location = new System.Drawing.Point(55, 20);
+			this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(32, 12);
+			this.label1.Size = new System.Drawing.Size(37, 17);
 			this.label1.TabIndex = 5;
 			this.label1.Text = "帳號:";
 			// 
@@ -105,9 +115,9 @@
 			// CreateUserForm
 			// 
 			this.AcceptButton = this.saveButton;
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(240, 149);
+			this.ClientSize = new System.Drawing.Size(320, 188);
 			this.Controls.Add(this.saveButton);
 			this.Controls.Add(this.nickNameTextBox);
 			this.Controls.Add(this.label3);
@@ -115,7 +125,9 @@
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.accountTextBox);
 			this.Controls.Add(this.label1);
+			this.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+			this.Margin = new System.Windows.Forms.Padding(4);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "CreateUserForm";

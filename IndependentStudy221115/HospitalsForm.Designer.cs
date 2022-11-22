@@ -52,11 +52,12 @@
             this.addressDataGridViewTextBoxColumn,
             this.telephoneDataGridViewTextBoxColumn});
 			this.dataGridView1.DataSource = this.hospitalIndexVMBindingSource;
-			this.dataGridView1.Location = new System.Drawing.Point(12, 12);
+			this.dataGridView1.Location = new System.Drawing.Point(16, 17);
+			this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.ReadOnly = true;
 			this.dataGridView1.RowTemplate.Height = 24;
-			this.dataGridView1.Size = new System.Drawing.Size(489, 304);
+			this.dataGridView1.Size = new System.Drawing.Size(652, 431);
 			this.dataGridView1.TabIndex = 0;
 			this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
 			// 
@@ -71,22 +72,23 @@
 			// hospitalNameDataGridViewTextBoxColumn
 			// 
 			this.hospitalNameDataGridViewTextBoxColumn.DataPropertyName = "HospitalName";
-			this.hospitalNameDataGridViewTextBoxColumn.HeaderText = "HospitalName";
+			this.hospitalNameDataGridViewTextBoxColumn.HeaderText = "醫院名稱";
 			this.hospitalNameDataGridViewTextBoxColumn.Name = "hospitalNameDataGridViewTextBoxColumn";
 			this.hospitalNameDataGridViewTextBoxColumn.ReadOnly = true;
+			this.hospitalNameDataGridViewTextBoxColumn.Width = 200;
 			// 
 			// addressDataGridViewTextBoxColumn
 			// 
 			this.addressDataGridViewTextBoxColumn.DataPropertyName = "Address";
-			this.addressDataGridViewTextBoxColumn.HeaderText = "Address";
+			this.addressDataGridViewTextBoxColumn.HeaderText = "醫院地址";
 			this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
 			this.addressDataGridViewTextBoxColumn.ReadOnly = true;
-			this.addressDataGridViewTextBoxColumn.Width = 150;
+			this.addressDataGridViewTextBoxColumn.Width = 250;
 			// 
 			// telephoneDataGridViewTextBoxColumn
 			// 
 			this.telephoneDataGridViewTextBoxColumn.DataPropertyName = "Telephone";
-			this.telephoneDataGridViewTextBoxColumn.HeaderText = "Telephone";
+			this.telephoneDataGridViewTextBoxColumn.HeaderText = "醫院電話";
 			this.telephoneDataGridViewTextBoxColumn.Name = "telephoneDataGridViewTextBoxColumn";
 			this.telephoneDataGridViewTextBoxColumn.ReadOnly = true;
 			// 
@@ -96,9 +98,10 @@
 			// 
 			// addNewButton
 			// 
-			this.addNewButton.Location = new System.Drawing.Point(408, 362);
+			this.addNewButton.Location = new System.Drawing.Point(544, 513);
+			this.addNewButton.Margin = new System.Windows.Forms.Padding(4);
 			this.addNewButton.Name = "addNewButton";
-			this.addNewButton.Size = new System.Drawing.Size(75, 23);
+			this.addNewButton.Size = new System.Drawing.Size(100, 33);
 			this.addNewButton.TabIndex = 1;
 			this.addNewButton.Text = "新增醫院";
 			this.addNewButton.UseVisualStyleBackColor = true;
@@ -106,12 +109,16 @@
 			// 
 			// HospitalsForm
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(514, 414);
+			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+			this.ClientSize = new System.Drawing.Size(685, 586);
 			this.Controls.Add(this.addNewButton);
 			this.Controls.Add(this.dataGridView1);
+			this.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+			this.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+			this.Margin = new System.Windows.Forms.Padding(4);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "HospitalsForm";

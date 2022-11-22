@@ -26,9 +26,8 @@ namespace IndependentStudy221115.Models.ViewModels
 		public int Id { get; set; }
 		[Required(ErrorMessage = "名字必填")]
 		public string Name { get; set; }
-		[Required(ErrorMessage = "性別必選")]
+		[Range(0, 1, ErrorMessage = "性別必選")]
 		public int Gender { get; set; }
-		[Required(ErrorMessage = "年齡必填")]
 		public int Age { get; set; }
 		public int FirstVcn { get; set; }
 		public int SecondVcn { get; set; }

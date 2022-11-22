@@ -52,25 +52,29 @@
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(63, 25);
+			this.label1.Location = new System.Drawing.Point(84, 35);
+			this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(32, 12);
+			this.label1.Size = new System.Drawing.Size(37, 17);
 			this.label1.TabIndex = 0;
 			this.label1.Text = "姓名:";
 			// 
 			// nameTextBox
 			// 
-			this.nameTextBox.Location = new System.Drawing.Point(102, 22);
+			this.nameTextBox.Location = new System.Drawing.Point(136, 31);
+			this.nameTextBox.Margin = new System.Windows.Forms.Padding(4);
+			this.nameTextBox.MaxLength = 50;
 			this.nameTextBox.Name = "nameTextBox";
-			this.nameTextBox.Size = new System.Drawing.Size(100, 22);
+			this.nameTextBox.Size = new System.Drawing.Size(132, 25);
 			this.nameTextBox.TabIndex = 0;
 			// 
 			// gender1RadioButton
 			// 
 			this.gender1RadioButton.AutoSize = true;
-			this.gender1RadioButton.Location = new System.Drawing.Point(102, 50);
+			this.gender1RadioButton.Location = new System.Drawing.Point(136, 71);
+			this.gender1RadioButton.Margin = new System.Windows.Forms.Padding(4);
 			this.gender1RadioButton.Name = "gender1RadioButton";
-			this.gender1RadioButton.Size = new System.Drawing.Size(35, 16);
+			this.gender1RadioButton.Size = new System.Drawing.Size(39, 21);
 			this.gender1RadioButton.TabIndex = 1;
 			this.gender1RadioButton.Tag = "1";
 			this.gender1RadioButton.Text = "男";
@@ -79,18 +83,20 @@
 			// label2
 			// 
 			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(63, 50);
+			this.label2.Location = new System.Drawing.Point(84, 71);
+			this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(29, 12);
+			this.label2.Size = new System.Drawing.Size(34, 17);
 			this.label2.TabIndex = 3;
 			this.label2.Text = "性別";
 			// 
 			// gender0RadioButton
 			// 
 			this.gender0RadioButton.AutoSize = true;
-			this.gender0RadioButton.Location = new System.Drawing.Point(167, 50);
+			this.gender0RadioButton.Location = new System.Drawing.Point(223, 71);
+			this.gender0RadioButton.Margin = new System.Windows.Forms.Padding(4);
 			this.gender0RadioButton.Name = "gender0RadioButton";
-			this.gender0RadioButton.Size = new System.Drawing.Size(35, 16);
+			this.gender0RadioButton.Size = new System.Drawing.Size(39, 21);
 			this.gender0RadioButton.TabIndex = 2;
 			this.gender0RadioButton.Tag = "0";
 			this.gender0RadioButton.Text = "女";
@@ -99,25 +105,29 @@
 			// label3
 			// 
 			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(63, 75);
+			this.label3.Location = new System.Drawing.Point(84, 106);
+			this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(32, 12);
+			this.label3.Size = new System.Drawing.Size(37, 17);
 			this.label3.TabIndex = 0;
 			this.label3.Text = "年齡:";
 			// 
 			// ageTextBox
 			// 
-			this.ageTextBox.Location = new System.Drawing.Point(102, 72);
+			this.ageTextBox.Location = new System.Drawing.Point(136, 102);
+			this.ageTextBox.Margin = new System.Windows.Forms.Padding(4);
+			this.ageTextBox.MaxLength = 50;
 			this.ageTextBox.Name = "ageTextBox";
-			this.ageTextBox.Size = new System.Drawing.Size(100, 22);
+			this.ageTextBox.Size = new System.Drawing.Size(132, 25);
 			this.ageTextBox.TabIndex = 2;
 			// 
 			// label4
 			// 
 			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(28, 103);
+			this.label4.Location = new System.Drawing.Point(37, 146);
+			this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(68, 12);
+			this.label4.Size = new System.Drawing.Size(76, 17);
 			this.label4.TabIndex = 4;
 			this.label4.Text = "第一劑疫苗:";
 			// 
@@ -126,9 +136,10 @@
 			this.comboBox1.DataSource = this.vaccineVMBindingSource;
 			this.comboBox1.DisplayMember = "VaccineName";
 			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Location = new System.Drawing.Point(102, 100);
+			this.comboBox1.Location = new System.Drawing.Point(136, 142);
+			this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
 			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(121, 20);
+			this.comboBox1.Size = new System.Drawing.Size(160, 25);
 			this.comboBox1.TabIndex = 3;
 			this.comboBox1.ValueMember = "Id";
 			// 
@@ -139,9 +150,10 @@
 			// label5
 			// 
 			this.label5.AutoSize = true;
-			this.label5.Location = new System.Drawing.Point(28, 129);
+			this.label5.Location = new System.Drawing.Point(37, 183);
+			this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(68, 12);
+			this.label5.Size = new System.Drawing.Size(76, 17);
 			this.label5.TabIndex = 4;
 			this.label5.Text = "第二劑疫苗:";
 			// 
@@ -150,18 +162,20 @@
 			this.comboBox2.DataSource = this.vaccineVMBindingSource;
 			this.comboBox2.DisplayMember = "VaccineName";
 			this.comboBox2.FormattingEnabled = true;
-			this.comboBox2.Location = new System.Drawing.Point(102, 126);
+			this.comboBox2.Location = new System.Drawing.Point(136, 178);
+			this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
 			this.comboBox2.Name = "comboBox2";
-			this.comboBox2.Size = new System.Drawing.Size(121, 20);
+			this.comboBox2.Size = new System.Drawing.Size(160, 25);
 			this.comboBox2.TabIndex = 4;
 			this.comboBox2.ValueMember = "Id";
 			// 
 			// label6
 			// 
 			this.label6.AutoSize = true;
-			this.label6.Location = new System.Drawing.Point(28, 155);
+			this.label6.Location = new System.Drawing.Point(37, 220);
+			this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(68, 12);
+			this.label6.Size = new System.Drawing.Size(76, 17);
 			this.label6.TabIndex = 4;
 			this.label6.Text = "第三劑疫苗:";
 			// 
@@ -170,17 +184,20 @@
 			this.comboBox3.DataSource = this.vaccineVMBindingSource;
 			this.comboBox3.DisplayMember = "VaccineName";
 			this.comboBox3.FormattingEnabled = true;
-			this.comboBox3.Location = new System.Drawing.Point(102, 152);
+			this.comboBox3.Location = new System.Drawing.Point(136, 215);
+			this.comboBox3.Margin = new System.Windows.Forms.Padding(4);
 			this.comboBox3.Name = "comboBox3";
-			this.comboBox3.Size = new System.Drawing.Size(121, 20);
+			this.comboBox3.Size = new System.Drawing.Size(160, 25);
 			this.comboBox3.TabIndex = 5;
 			this.comboBox3.ValueMember = "Id";
 			// 
 			// saveButton
 			// 
-			this.saveButton.Location = new System.Drawing.Point(112, 178);
+			this.saveButton.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+			this.saveButton.Location = new System.Drawing.Point(149, 252);
+			this.saveButton.Margin = new System.Windows.Forms.Padding(4);
 			this.saveButton.Name = "saveButton";
-			this.saveButton.Size = new System.Drawing.Size(75, 23);
+			this.saveButton.Size = new System.Drawing.Size(100, 33);
 			this.saveButton.TabIndex = 6;
 			this.saveButton.Text = "新增";
 			this.saveButton.UseVisualStyleBackColor = true;
@@ -193,9 +210,9 @@
 			// CreatePatientForm
 			// 
 			this.AcceptButton = this.saveButton;
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(270, 220);
+			this.ClientSize = new System.Drawing.Size(360, 312);
 			this.Controls.Add(this.saveButton);
 			this.Controls.Add(this.comboBox3);
 			this.Controls.Add(this.label6);
@@ -210,7 +227,9 @@
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.nameTextBox);
 			this.Controls.Add(this.label1);
+			this.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+			this.Margin = new System.Windows.Forms.Padding(4);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "CreatePatientForm";

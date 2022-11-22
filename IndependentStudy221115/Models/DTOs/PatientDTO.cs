@@ -43,8 +43,8 @@ namespace IndependentStudy221115.Models.DTOs
 
 		public static PatientIndexVM ToIndexVM(this PatientDTO dto)
 		{
-			var check = new Bitmap(Directory.GetCurrentDirectory() +"\\..\\..\\Infra\\images\\463574.png");
-			var cross = new Bitmap(Directory.GetCurrentDirectory() + "\\..\\..\\Infra\\images\\2569174.png");
+			var check = new Bitmap(@"..\..\Infra\images\463574.png");
+			var cross = new Bitmap(@"..\..\Infra\images\2569174.png");
 
 			string result = string.Empty;
 			if (dto.IsDiagnosed.HasValue)

@@ -75,8 +75,8 @@ namespace IndependentStudy221115
 			// UserVM model = new UserService().Get(id);
 			PatientDTO dto = new PatientDAO().Get(id);
 
-			var check = new Bitmap(Directory.GetCurrentDirectory() + "\\..\\..\\Infra\\images\\463574.png");
-			var cross = new Bitmap(Directory.GetCurrentDirectory() + "\\..\\..\\Infra\\images\\2569174.png");
+			var check = new Bitmap(@"..\..\Infra\images\463574.png");
+			var cross = new Bitmap(@"..\..\Infra\images\2569174.png");
 
 			string result = string.Empty;
 

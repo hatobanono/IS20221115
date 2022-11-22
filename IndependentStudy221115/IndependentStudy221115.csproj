@@ -259,8 +259,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Infra\images\1086932.png" />
     <Content Include="Infra\images\2569174.png" />
+    <Content Include="Infra\images\33777.png" />
+    <Content Include="Infra\images\3394785.png" />
     <Content Include="Infra\images\463574.png" />
+    <Content Include="Infra\images\660350.png" />
+    <Content Include="Infra\images\905462.png" />
     <Content Include="Infra\SQL設定.txt" />
   </ItemGroup>
   <ItemGroup />

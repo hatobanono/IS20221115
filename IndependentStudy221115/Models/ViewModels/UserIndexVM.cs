@@ -26,11 +26,10 @@ namespace IndependentStudy221115.Models.ViewModels
 
 
 		[Required(ErrorMessage = "密碼必填")]
-		//[EmailAddress(ErrorMessage ="Email格式有誤")]
 		public string Password { get; set; }
 
 
-		[Required(ErrorMessage = "姓名必填")]
+		[Required(ErrorMessage = "名字必填")]
 		public string NickName { get; set; }
 	}
 

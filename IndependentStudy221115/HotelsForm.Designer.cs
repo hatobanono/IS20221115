@@ -54,11 +54,12 @@
             this.telephoneDataGridViewTextBoxColumn,
             this.capacityDataGridViewTextBoxColumn});
 			this.dataGridView1.DataSource = this.hotelIndexVMBindingSource;
-			this.dataGridView1.Location = new System.Drawing.Point(12, 12);
+			this.dataGridView1.Location = new System.Drawing.Point(16, 17);
+			this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.ReadOnly = true;
 			this.dataGridView1.RowTemplate.Height = 24;
-			this.dataGridView1.Size = new System.Drawing.Size(547, 293);
+			this.dataGridView1.Size = new System.Drawing.Size(729, 415);
 			this.dataGridView1.TabIndex = 0;
 			this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
 			// 
@@ -73,28 +74,30 @@
 			// hotelNameDataGridViewTextBoxColumn
 			// 
 			this.hotelNameDataGridViewTextBoxColumn.DataPropertyName = "HotelName";
-			this.hotelNameDataGridViewTextBoxColumn.HeaderText = "HotelName";
+			this.hotelNameDataGridViewTextBoxColumn.HeaderText = "旅館名稱";
 			this.hotelNameDataGridViewTextBoxColumn.Name = "hotelNameDataGridViewTextBoxColumn";
 			this.hotelNameDataGridViewTextBoxColumn.ReadOnly = true;
+			this.hotelNameDataGridViewTextBoxColumn.Width = 200;
 			// 
 			// addressDataGridViewTextBoxColumn
 			// 
 			this.addressDataGridViewTextBoxColumn.DataPropertyName = "Address";
-			this.addressDataGridViewTextBoxColumn.HeaderText = "Address";
+			this.addressDataGridViewTextBoxColumn.HeaderText = "旅館地址";
 			this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
 			this.addressDataGridViewTextBoxColumn.ReadOnly = true;
+			this.addressDataGridViewTextBoxColumn.Width = 200;
 			// 
 			// telephoneDataGridViewTextBoxColumn
 			// 
 			this.telephoneDataGridViewTextBoxColumn.DataPropertyName = "Telephone";
-			this.telephoneDataGridViewTextBoxColumn.HeaderText = "Telephone";
+			this.telephoneDataGridViewTextBoxColumn.HeaderText = "旅館電話";
 			this.telephoneDataGridViewTextBoxColumn.Name = "telephoneDataGridViewTextBoxColumn";
 			this.telephoneDataGridViewTextBoxColumn.ReadOnly = true;
 			// 
 			// capacityDataGridViewTextBoxColumn
 			// 
 			this.capacityDataGridViewTextBoxColumn.DataPropertyName = "Capacity";
-			this.capacityDataGridViewTextBoxColumn.HeaderText = "Capacity";
+			this.capacityDataGridViewTextBoxColumn.HeaderText = "容納人數";
 			this.capacityDataGridViewTextBoxColumn.Name = "capacityDataGridViewTextBoxColumn";
 			this.capacityDataGridViewTextBoxColumn.ReadOnly = true;
 			// 
@@ -104,9 +107,10 @@
 			// 
 			// addNewButton
 			// 
-			this.addNewButton.Location = new System.Drawing.Point(431, 345);
+			this.addNewButton.Location = new System.Drawing.Point(575, 489);
+			this.addNewButton.Margin = new System.Windows.Forms.Padding(4);
 			this.addNewButton.Name = "addNewButton";
-			this.addNewButton.Size = new System.Drawing.Size(95, 23);
+			this.addNewButton.Size = new System.Drawing.Size(127, 33);
 			this.addNewButton.TabIndex = 1;
 			this.addNewButton.Text = "新增防疫旅館";
 			this.addNewButton.UseVisualStyleBackColor = true;
@@ -114,12 +118,15 @@
 			// 
 			// HotelsForm
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(571, 401);
+			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+			this.ClientSize = new System.Drawing.Size(761, 568);
 			this.Controls.Add(this.addNewButton);
 			this.Controls.Add(this.dataGridView1);
+			this.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+			this.Margin = new System.Windows.Forms.Padding(4);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "HotelsForm";
@@ -134,11 +141,11 @@
 
 		private System.Windows.Forms.DataGridView dataGridView1;
 		private System.Windows.Forms.Button addNewButton;
+		private System.Windows.Forms.BindingSource hotelIndexVMBindingSource;
 		private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
 		private System.Windows.Forms.DataGridViewTextBoxColumn hotelNameDataGridViewTextBoxColumn;
 		private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
 		private System.Windows.Forms.DataGridViewTextBoxColumn telephoneDataGridViewTextBoxColumn;
 		private System.Windows.Forms.DataGridViewTextBoxColumn capacityDataGridViewTextBoxColumn;
-		private System.Windows.Forms.BindingSource hotelIndexVMBindingSource;
 	}
 }

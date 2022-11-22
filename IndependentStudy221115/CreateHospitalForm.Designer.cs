@@ -43,56 +43,66 @@
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(42, 41);
+			this.label1.Location = new System.Drawing.Point(53, 23);
+			this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(32, 12);
+			this.label1.Size = new System.Drawing.Size(37, 17);
 			this.label1.TabIndex = 0;
 			this.label1.Text = "醫院:";
 			// 
 			// hospitalNameTextBox
 			// 
-			this.hospitalNameTextBox.Location = new System.Drawing.Point(81, 38);
+			this.hospitalNameTextBox.Location = new System.Drawing.Point(105, 19);
+			this.hospitalNameTextBox.Margin = new System.Windows.Forms.Padding(4);
+			this.hospitalNameTextBox.MaxLength = 50;
 			this.hospitalNameTextBox.Name = "hospitalNameTextBox";
-			this.hospitalNameTextBox.Size = new System.Drawing.Size(170, 22);
+			this.hospitalNameTextBox.Size = new System.Drawing.Size(225, 25);
 			this.hospitalNameTextBox.TabIndex = 0;
 			// 
 			// label2
 			// 
 			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(42, 69);
+			this.label2.Location = new System.Drawing.Point(53, 63);
+			this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(32, 12);
+			this.label2.Size = new System.Drawing.Size(37, 17);
 			this.label2.TabIndex = 0;
 			this.label2.Text = "地址:";
 			// 
 			// addressTextBox
 			// 
-			this.addressTextBox.Location = new System.Drawing.Point(81, 66);
+			this.addressTextBox.Location = new System.Drawing.Point(105, 59);
+			this.addressTextBox.Margin = new System.Windows.Forms.Padding(4);
+			this.addressTextBox.MaxLength = 50;
 			this.addressTextBox.Name = "addressTextBox";
-			this.addressTextBox.Size = new System.Drawing.Size(170, 22);
+			this.addressTextBox.Size = new System.Drawing.Size(225, 25);
 			this.addressTextBox.TabIndex = 1;
 			// 
 			// label3
 			// 
 			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(42, 97);
+			this.label3.Location = new System.Drawing.Point(53, 102);
+			this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(32, 12);
+			this.label3.Size = new System.Drawing.Size(37, 17);
 			this.label3.TabIndex = 0;
 			this.label3.Text = "電話:";
 			// 
 			// telephoneTextBox
 			// 
-			this.telephoneTextBox.Location = new System.Drawing.Point(81, 94);
+			this.telephoneTextBox.Location = new System.Drawing.Point(105, 98);
+			this.telephoneTextBox.Margin = new System.Windows.Forms.Padding(4);
+			this.telephoneTextBox.MaxLength = 50;
 			this.telephoneTextBox.Name = "telephoneTextBox";
-			this.telephoneTextBox.Size = new System.Drawing.Size(170, 22);
+			this.telephoneTextBox.Size = new System.Drawing.Size(225, 25);
 			this.telephoneTextBox.TabIndex = 2;
 			// 
 			// addNewButton
 			// 
-			this.addNewButton.Location = new System.Drawing.Point(118, 136);
+			this.addNewButton.Location = new System.Drawing.Point(154, 158);
+			this.addNewButton.Margin = new System.Windows.Forms.Padding(4);
 			this.addNewButton.Name = "addNewButton";
-			this.addNewButton.Size = new System.Drawing.Size(75, 23);
+			this.addNewButton.Size = new System.Drawing.Size(100, 33);
 			this.addNewButton.TabIndex = 3;
 			this.addNewButton.Text = "新增";
 			this.addNewButton.UseVisualStyleBackColor = true;
@@ -105,9 +115,9 @@
 			// CreateHospitalForm
 			// 
 			this.AcceptButton = this.addNewButton;
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(316, 181);
+			this.ClientSize = new System.Drawing.Size(421, 205);
 			this.Controls.Add(this.addNewButton);
 			this.Controls.Add(this.telephoneTextBox);
 			this.Controls.Add(this.label3);
@@ -115,7 +125,9 @@
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.hospitalNameTextBox);
 			this.Controls.Add(this.label1);
+			this.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+			this.Margin = new System.Windows.Forms.Padding(4);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "CreateHospitalForm";
